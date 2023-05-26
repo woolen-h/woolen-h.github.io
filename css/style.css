@@ -7,7 +7,7 @@
     background-color: black;
     color: white;
 }
-
+/* header style 끝--------------------------------------------------------------------- */
 
 /* content style */
 .content {
@@ -15,8 +15,13 @@
     height: 500px;
     display: flex;
     background-color: crimson;
+    justify-content: center;
+    align-items: end;
 }
-
+.home_title {
+    font-size: 120pt;
+}
+/* content style 끝--------------------------------------------------------------------- */
 
 /* footer style */
 .footer {
@@ -26,3 +31,4 @@
     background-color: black;
     color: white;
 }
+/* footer style 끝--------------------------------------------------------------------- */
