@@ -1,6 +1,8 @@
 /* header style */
 .header {
     width: 100%;
+    height: 50px;
+    background-color: cadetblue;
 }
 
 
@@ -13,4 +15,6 @@
 /* footer style */
 .footer {
     width: 100%;
+    height: 200px;
+    background-color: cadetblue;
 }
