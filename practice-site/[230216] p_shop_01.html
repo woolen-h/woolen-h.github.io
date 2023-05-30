@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="[230217] p_shop_01.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+  
+  <title>29cm_practice</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="headerBox">
+      <div class="logo">
+        <a class="brand-logo" href="#">LOGO</a>
+        <!-- 로고 폰트를 적용해주세요 -->
+        <div class="logo-iconGr">
+          <a href="#">
+            <div class="myPage">
+              <img src="https://cdn-icons-png.flaticon.com/512/3033/3033155.png" alt="myPage-icon" />
+              <!--마이페이지 아이콘-->
+              <strong class="mP-txt">MY PAGE</strong>
+            </div>
+          </a>
+          <a href="#">
+            <div class="myLike">
+              <img src="https://cdn-icons-png.flaticon.com/512/3033/3033186.png" alt="myLike-icon" />
+              <!--마이라이크 아이콘-->
+              <strong class="mL-txt">MY LIKE</strong>
+            </div>
+          </a>
+          <a href="#">
+            <div class="shoppingBag">
+              <img src="https://cdn-icons-png.flaticon.com/512/3033/3033144.png" alt="shoppingBag-icon" />
+              <!--장바구니 아이콘-->
+              <strong class="sB-txt">SHOPPING BAG</strong>
+            </div>
+          </a>
+          <a href="#">
+            <div class="loginOut">
+              <img src="https://cdn-icons-png.flaticon.com/512/3033/3033143.png" alt="loginOut-icon" />
+              <!-- loginout 아이콘-->
+              <strong class="lI-txt">LOGIN</strong>
+              <strong class="lO-txt">LOGOUT</strong>
+              <!-- 로그인 되었을 때는 로그아웃 버튼 활성화 -->
+              <div id="popup"></div>
+              <!-- 로그인 팝업 -->
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- logo end -->
+      <div class="big_menu">
+        <div class="bM-1">
+          <a href="#"><span>Special-Order</span></a>
+          <!-- 빅메뉴 1 -->
+          <a href="#"><span>Showcase</span></a>
+          <!-- 빅메뉴 2 -->
+          <a href="#"><span>PT</span></a>
+          <!-- 빅메뉴 3 -->
+          <a href="#"><span>Welove</span></a>
+          <!-- 빅메뉴 4 -->
+        </div>
+        <!-- bM-1 end -->
+        <div class="bM-2">
+          <div id="searchbox" style="display: none">
+            <input type="search" id="search-input" placeholder="Search Product" />
+          </div>
+          <!-- 서치박스 end -->
+          <div id="search-display">
+            <button id="search-btn" onclick="showSearch()"></button>
+          </div>
+          <!-- 서치버튼 end -->
+        </div>
+        <!-- bM-2 end -->
+      </div>
+      <!-- big_menu end -->
+      <div class="small_menu">
+        <a class="s_m_li" href="#"><span>BEST</span></a>
+        <a class="s_m_li" href="#">
+          <div class="women">
+            <span>WOMEN</span>
+          </div>
+        </a>
+        <a class="s_m_li" href="#"><span>MEN</span></a>
+        <a class="s_m_li" href="#"><span>INTERIOR</span></a>
+        <a class="s_m_li" href="#"><span>KITCHEN</span></a>
+        <a class="s_m_li" href="#"><span>ELECTRONICS</span></a>
+        <a class="s_m_li" href="#"><span>DIGITAL</span></a>
+        <a class="s_m_li" href="#"><span>BEAUTY</span></a>
+        <a class="s_m_li" href="#"><span>FOOD</span></a>
+        <a class="s_m_li" href="#"><span>LEISURE</span></a>
+        <a class="s_m_li" href="#"><span>KIDS</span></a>
+        <a class="s_m_li" href="#"><span>CULTURE</span></a>
+        <span class="line">|</span>
+        <a class="s_m_li_2" href="#"><span>Event</span></a>
+        <a class="s_m_li_2" href="#"><span>Lookbook</span></a>
+      </div>
+      <!-- small_menu end -->
+    </header>
+    <!-- headerBox end -->
+    <main>
+      <!--맨 처음 들어갔을 때 이벤트 (페이지 내)팝업 구현하기-->
+      <div class="feed">
+        <div class="col_1">
+          <!-- **************************좌측 컬럼 -->
+          <div class="con_1">
+            <a href="#">
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1568191009535-7d8b407d389a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                  alt="con_1_img" />
+              </div>
+            </a>
+          </div>
+          <!-- con_1 end -->
+          <div class="con_2">
+            <a href="#">
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1520052205864-92d242b3a76b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                  alt="con_2_img" />
+              </div>
+            </a>
+          </div>
+          <!-- con_2 end -->
+          <div class="con_3">
+            <a href="#">
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1530177150700-84cd9a3b059b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                  alt="con_3_img" />
+              </div>
+            </a>
+          </div>
+          <!-- con_3 end -->
+          <div class="con_4">
+            <a href="#">
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1536316754104-90daa92e4eb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  alt="con_4_img" />
+              </div>
+            </a>
+          </div>
+          <!-- con_4 end -->
+          <div class="con_5">
+            <a href="#">
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1504548840739-580b10ae7715?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  alt="con_5_img" />
+              </div>
+            </a>
+          </div>
+          <!-- con_5 end -->
+        </div>
+        <!-- col_1 end -->
+        <div class="col_2">
+          <!-- **************************중간 컬럼 -->
+          <div class="con_6">
+            <a href="#">
+              <div class="top-image">
+                <img
+                  src="https://images.unsplash.com/photo-1646381655362-da4c49863b82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  alt="con_6_img" />
+              </div>
+            </a>
+          </div>
+          <!-- con_6 end -->
+          <div class="con_7">
+            <a href="#">
+              <div>
+                <div class="col_Img">
+                  <img
+                    src="https://images.unsplash.com/photo-1536009190979-329b94ad4d57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="con_7_img" />
+                </div>
+                <h1 class="feedTitle">product-title</h1>
+                <p class="contents">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Temporibus cumque nisi perferendis nesciunt odit doloremque
+                  quaerat omnis quae accusantium molestiae aspernatur non
+                  aliquam, necessitatibus eveniet voluptas harum incidunt
+                  ipsam rem. 국교는 인정되지 아니하며, 종교와 정치는 분리된다.
+                  헌법에 의하여 체결·공포된 조약과 일반적으로 승인된
+                  국제법규는 국내법과 같은 효력을 가진다. 국회의원은 법률이
+                  정하는 직을 겸할 수 없다. 선거운동은 각급 선거관리위원회의
+                  관리하에 법률이 정하는 범위안에서 하되, 균등한 기회가
+                  보장되어야 한다.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- con_7 end -->
+          <div class="con_8">
+            <a href="#">
+              <div>
+                <div class="col_Img">
+                  <img
+                    src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80"
+                    alt="con_8_img" />
+                </div>
+                <h1 class="feedTitle">product-title</h1>
+                <p class="contents">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Temporibus cumque nisi perferendis nesciunt odit doloremque
+                  quaerat omnis quae accusantium molestiae aspernatur non
+                  aliquam, necessitatibus eveniet voluptas harum incidunt
+                  ipsam rem. 국교는 인정되지 아니하며, 종교와 정치는 분리된다.
+                  헌법에 의하여 체결·공포된 조약과 일반적으로 승인된
+                  국제법규는 국내법과 같은 효력을 가진다. 국회의원은 법률이
+                  정하는 직을 겸할 수 없다. 선거운동은 각급 선거관리위원회의
+                  관리하에 법률이 정하는 범위안에서 하되, 균등한 기회가
+                  보장되어야 한다.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- con_8 end -->
+          <div class="con_9">
+            <a href="#">
+              <div>
+                <div class="col_Img">
+                  <img
+                    src="https://images.unsplash.com/photo-1586211082529-b7c6b640abff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+                    alt="con_9_img" />
+                </div>
+                <h1 class="feedTitle">product-title</h1>
+                <p class="contents">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Temporibus cumque nisi perferendis nesciunt odit doloremque
+                  quaerat omnis quae accusantium molestiae aspernatur non
+                  aliquam, necessitatibus eveniet voluptas harum incidunt
+                  ipsam rem. 국교는 인정되지 아니하며, 종교와 정치는 분리된다.
+                  헌법에 의하여 체결·공포된 조약과 일반적으로 승인된
+                  국제법규는 국내법과 같은 효력을 가진다. 국회의원은 법률이
+                  정하는 직을 겸할 수 없다. 선거운동은 각급 선거관리위원회의
+                  관리하에 법률이 정하는 범위안에서 하되, 균등한 기회가
+                  보장되어야 한다.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- con_9 end -->
+          <div class="con_10">
+            <a href="#">
+              <div>
+                <div class="col_Img">
+                  <img
+                    src="https://images.unsplash.com/photo-1654679210948-1d864695390c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80"
+                    alt="con_10_img" />
+                </div>
+                <h1 class="feedTitle">product-title</h1>
+                <p class="contents">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Temporibus cumque nisi perferendis nesciunt odit doloremque
+                  quaerat omnis quae accusantium molestiae aspernatur non
+                  aliquam, necessitatibus eveniet voluptas harum incidunt
+                  ipsam rem. 국교는 인정되지 아니하며, 종교와 정치는 분리된다.
+                  헌법에 의하여 체결·공포된 조약과 일반적으로 승인된
+                  국제법규는 국내법과 같은 효력을 가진다. 국회의원은 법률이
+                  정하는 직을 겸할 수 없다. 선거운동은 각급 선거관리위원회의
+                  관리하에 법률이 정하는 범위안에서 하되, 균등한 기회가
+                  보장되어야 한다.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- con_10 end -->
+        </div>
+        <!-- col_2 end -->
+        <div class="col_3">
+          <!-- **************************우측 컬럼 -->
+          <div class="con_11">
+            <a href="#">
+              <div class="top-image">
+                <img
+                  src="https://images.unsplash.com/photo-1530762312300-888baa333d74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80"
+                  alt="con_11_img" />
+              </div>
+            </a>
+          </div>
+          <!-- con_11 end -->
+          <div class="con_12">
+            <a href="#">
+              <div>
+                <div class="col_Img">
+                  <img
+                    src="https://images.unsplash.com/photo-1619894129368-ecd7d69c3eed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="con_12_img" />
+                </div>
+                <h1 class="feedTitle">product-title</h1>
+                <p class="contents">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Temporibus cumque nisi perferendis nesciunt odit doloremque
+                  quaerat omnis quae accusantium molestiae aspernatur non
+                  aliquam, necessitatibus eveniet voluptas harum incidunt
+                  ipsam rem. 국교는 인정되지 아니하며, 종교와 정치는 분리된다.
+                  헌법에 의하여 체결·공포된 조약과 일반적으로 승인된
+                  국제법규는 국내법과 같은 효력을 가진다. 국회의원은 법률이
+                  정하는 직을 겸할 수 없다. 선거운동은 각급 선거관리위원회의
+                  관리하에 법률이 정하는 범위안에서 하되, 균등한 기회가
+                  보장되어야 한다.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- con_12 end -->
+          <div class="con_13">
+            <a href="#">
+              <div class="col_Img">
+                <img
+                  src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  alt="con_13_img" />
+              </div>
+              <div>
+                <h1 class="feedTitle">product-title</h1>
+                <p class="contents">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Temporibus cumque nisi perferendis nesciunt odit doloremque
+                  quaerat omnis quae accusantium molestiae aspernatur non
+                  aliquam, necessitatibus eveniet voluptas harum incidunt
+                  ipsam rem. 국교는 인정되지 아니하며, 종교와 정치는 분리된다.
+                  헌법에 의하여 체결·공포된 조약과 일반적으로 승인된
+                  국제법규는 국내법과 같은 효력을 가진다. 국회의원은 법률이
+                  정하는 직을 겸할 수 없다. 선거운동은 각급 선거관리위원회의
+                  관리하에 법률이 정하는 범위안에서 하되, 균등한 기회가
+                  보장되어야 한다.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- con_13 end -->
+          <div class="con_14">
+            <a href="#">
+              <div>
+                <div class="col_Img">
+                  <img
+                    src="https://images.unsplash.com/photo-1596868801151-5d26796963b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="con_14_img" />
+                </div>
+                <h1 class="feedTitle">product-title</h1>
+                <p class="contents">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Temporibus cumque nisi perferendis nesciunt odit doloremque
+                  quaerat omnis quae accusantium molestiae aspernatur non
+                  aliquam, necessitatibus eveniet voluptas harum incidunt
+                  ipsam rem. 국교는 인정되지 아니하며, 종교와 정치는 분리된다.
+                  헌법에 의하여 체결·공포된 조약과 일반적으로 승인된
+                  국제법규는 국내법과 같은 효력을 가진다. 국회의원은 법률이
+                  정하는 직을 겸할 수 없다. 선거운동은 각급 선거관리위원회의
+                  관리하에 법률이 정하는 범위안에서 하되, 균등한 기회가
+                  보장되어야 한다.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- con_14 end -->
+          <div class="con_15">
+            <a href="#">
+              <div>
+                <div class="col_Img">
+                  <img
+                    src="https://images.unsplash.com/photo-1544194215-541c2d3561a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="con_15_img" />
+                </div>
+                <h1 class="feedTitle">product-title</h1>
+                <p class="contents">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Temporibus cumque nisi perferendis nesciunt odit doloremque
+                  quaerat omnis quae accusantium molestiae aspernatur non
+                  aliquam, necessitatibus eveniet voluptas harum incidunt
+                  ipsam rem. 국교는 인정되지 아니하며, 종교와 정치는 분리된다.
+                  헌법에 의하여 체결·공포된 조약과 일반적으로 승인된
+                  국제법규는 국내법과 같은 효력을 가진다. 국회의원은 법률이
+                  정하는 직을 겸할 수 없다. 선거운동은 각급 선거관리위원회의
+                  관리하에 법률이 정하는 범위안에서 하되, 균등한 기회가
+                  보장되어야 한다.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- con_15 end -->
+        </div>
+        <!-- col_3 end -->
+      </div>
+      <!-- feed end -->
+    </main>
+    <!-- main end -->
+    <footer>
+      <div class="f_Top">
+        <div class="f_CS">
+          <button>FAQ</button>
+          <button>1:1 문의</button>
+        </div>
+      </div>
+      <div class="f_Inf">
+        <p>
+          ※ 운영시간 : 평일 10:00 - 17:00 (점심시간 12:30 - 13:30 제외 / 주말
+          및 공휴일 제외)
+        </p>
+        <div class="icon-flex">
+          <a href="#"><img src="instagram.png" alt="insta-icon" /></a>
+          <a href="#"><img src="youtube.png" alt="youtb-icon" /></a>
+          <a href="#"><img src="app-store.png" alt="app-apl-icon" /></a>
+          <a href="#"><img src="google-play.png" alt="app-adr-icon" /></a>
+        </div>
+      </div>
+      <hr />
+      <div class="f_Middle">
+        <ul>
+          <li>
+            <h2 class="title">NOTICE</h2>
+          </li>
+          <a href="#">
+            <li>[공지] 2023년 설 연휴 배송 공지</li>
+          </a>
+          <a href="#">
+            <li>
+              [공지] '컬처 > 책, 음반' 카테고리 운영 종료 안내('23.04.11.
+              시행)
+            </li>
+          </a>
+          <a href="#">
+            <li>[공지] 리뷰운영 정책 사전 변경 안내('22.12.21. 시행)</li>
+          </a>
+          <a href="#">
+            <li>[29CM 공지] 29CM 앱 내 [LIKE 정렬] 오류 안내</li>
+          </a>
+          <a href="#">
+            <li>[공지] 29CM 앱 내 [LIKE 정렬] 오류 안내</li>
+          </a>
+          <a href="#">
+            <li>[공지] 개인정보 처리방침 사전 변경 안내</li>
+          </a>
+        </ul>
+        <ul>
+          <li>
+            <h2 class="title">ABOUT US</h2>
+          </li>
+          <a href="#">
+            <li>회사소개</li>
+          </a>
+          <a href="#">
+            <li>인재채용</li>
+          </a>
+          <a href="#">
+            <li>상시 할인 혜택</li>
+          </a>
+        </ul>
+        <ul>
+          <li>
+            <h2 class="title">MY ORDER</h2>
+          </li>
+          <a href="#">
+            <li>주문배송</li>
+          </a>
+          <a href="#">
+            <li>취소/교환/반품 내역</li>
+          </a>
+          <a href="#">
+            <li>상품리뷰 내역</li>
+          </a>
+          <a href="#">
+            <li>증빙서류발급</li>
+          </a>
+        </ul>
+        <ul>
+          <li>
+            <h2 class="title">MY ACCOUNT</h2>
+          </li>
+          <a href="#">
+            <li>회원정보수정</li>
+          </a>
+          <a href="#">
+            <li>회원등급</li>
+          </a>
+          <a href="#">
+            <li>마일리지현황</li>
+          </a>
+          <a href="#">
+            <li>쿠폰</li>
+          </a>
+        </ul>
+        <ul>
+          <li>
+            <h2 class="title">HELP</h2>
+          </li>
+          <a href="#">
+            <li>1:1 문의내역</li>
+          </a>
+          <a href="#">
+            <li>마케팅 제휴, 입점, 대량 주문 문의</li>
+          </a>
+          <a href="#">
+            <li>상품 Q&A내역</li>
+          </a>
+          <a href="#">
+            <li>공지사항</li>
+          </a>
+          <a href="#">
+            <li>FAQ</li>
+          </a>
+          <a href="#">
+            <li>고객의 소리</li>
+          </a>
+        </ul>
+      </div>
+      <hr />
+      <div class="f_Bottom">
+        <div class="f_Det">
+          <span>개인정보처리방침</span> | <span>이용약관</span>
+        </div>
+        <p>
+          상호명주식회사 무신사 (MUSINSA Co., Ltd.)사업장소재지서울특별시
+          성동구 아차산로 13길 11, 1층 (성수동2가, 무신사캠퍼스
+          엔1)팩스070-8622-7737사업자등록번호211-88-79575 통신판매업신고2022-서울성동-01952 <button class="f_Det_btn">사업자정보확인</button></p>
+        <p>
+          전화번호1644-0560이메일customer@29cm.co.kr대표한문일개인정보
+          보호책임자이인섭호스팅서비스(주)무신사
+        </p>
+        <p>
+          일부 상품의 경우 29CM는 통신판매의 당사자가 아닌 통신판매중개자로서
+          상품, 상품정보, 거래에 대한 책임이 제한될 수 있으므로, 각 상품
+          페이지에서 구체적인 내용을 확인하시기 바랍니다.
+        </p>
+        <div class="f_Det_box">
+          <a href="#"><img src="-" alt="inipay_Icon" /></a>
+          KG 에스크로<br />
+          가입 사실 확인
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </div>
+  <!-- page end -->
+
+  <script src="[230217] p_shop_01.js"></script>
+</body>
+<!-- body end -->
+
+</html>

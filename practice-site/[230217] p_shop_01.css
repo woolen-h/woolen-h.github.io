@@ -1,0 +1,237 @@
+html {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  padding: 30px;
+}
+
+[alt*="icon"] {
+  size: 15px;
+  margin-right: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.brand-logo {
+  font-weight: 700;
+}
+
+.page {
+  display: grid;
+}
+
+.headerBox {
+  grid-template-columns: auto;
+}
+
+.logo,
+.big_menu,
+.small_menu {
+  display: flex;
+}
+
+.logo {
+  justify-content: space-between;
+}
+
+.logo-iconGr {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.logo-iconGr img {
+  width: 15px;
+}
+
+.logo-iconGr div {
+  display: flex;
+  margin-left: 20px;
+  font-size: 10pt;
+  color: rgb(137, 137, 137);
+
+}
+
+.big_menu {
+  justify-content: space-between;
+  font-weight: 800;
+}
+
+.bM-1 {
+  width: 75%;
+  display: flex;
+  gap: 30px;
+  font-size: 36pt;
+  margin-bottom: 40px;
+}
+
+.bM-2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.bM-2 button {
+  border: 0;
+  outline: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url(..jpg);
+  background-color: greenyellow;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-bottom: 3px solid black;
+  outline: none;
+}
+
+#searchbox {
+  padding-right: 20px;
+}
+
+#search-input {
+  width: 250px;
+}
+
+.small_menu {
+  justify-content: space-between;
+  width: 77.8%;
+  margin-bottom: 40px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/*드롭다운 메뉴 구현*/
+
+.dropdown-content {
+  display: none;
+}
+
+/*드롭다운 메뉴 끝*/
+
+.icon-flex {
+  display: flex;
+}
+.line {
+  font-weight: 300;
+}
+
+.s_m_li_2 {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.feed {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.feed p {
+  font-size: 12pt;
+  line-height: 170%;
+}
+
+.col_1 {
+  display: flex;
+  width: 33.33%;
+  flex-direction: column;
+  padding-right: 20px;
+  border-right: 1px solid rgb(204, 204, 204);
+}
+
+.col_1 img {
+  width: 100%;
+}
+
+.col_2 {
+  display: flex;
+  width: 33.33%;
+  flex-direction: column;
+  margin-left: 20px;
+  padding-right: 20px;
+  border-right: 1px solid rgb(204, 204, 204);
+}
+
+.col_2 img {
+  width: 100%;
+}
+
+
+.top-image img {
+  width: 100%;
+}
+
+.contents {
+  margin-bottom: 20px;
+}
+
+.col_Img {
+  margin-bottom: 20px;
+}
+
+.col_3 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  width: 33.33%;
+}
+
+.col_3 img {
+  width: 100%;
+}
+
+.feedTitle {
+  font-size: 20pt;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+footer img {
+  width: 30px;
+}
+
+.f_Top {
+  display: flex;
+  font-size: 10pt;
+}
+
+.f_CS button {
+  margin-right: 10px;
+}
+
+.f_Inf {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f_Middle {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10pt;
+}
+
+.f_Middle ul li {
+  line-height: 200%;
+}
+
+.f_Bottom {
+  font-size: 9pt;
+  line-height: 170%;
+  color: rgb(178, 178, 178);
+}
+
+.f_Det_btn {
+  margin-left: 5px;
+  font-size: 7pt;
+}

@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    box-sizing: border-box;
+    font-display: fallback;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(255, 238, 0);
+}
+
+.body_back {
+    background-color: rgb(0, 153, 255);
+    border-radius: 100%;
+    width: 0.1vw;
+    height: 0.1vh;
+    position: absolute;
+    z-index: -10;
+}
+
+body:hover .body_back {
+    transform: scale(3000.0);
+    transition: 2.5s;
+}
+
+.header {
+    display: grid;
+    grid-gap: 40px;
+    padding: 20px 45px 20px 45px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo {
+    font-size: 30px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+}
+
+.category {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    font-weight: Bold;
+}
+
+.search {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    font-weight: Bold;
+}
+
+input[type="search"] {
+    width: 280px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.contents1 {
+    grid-gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px 45px 45px 45px;
+}
+
+.title {
+    font-size: 30pt;
+    font-weight: 500;
+    animation-name: fadeInDown;
+    animation-duration: 2s;
+}
+
+.c1 {
+    font-size: 20pt;
+}
+
+.c2 {
+    font-weight: 600;
+}
+
+.c3 {
+    margin-top: 10px;
+}
+
+.contents2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    padding-top: 40px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 40px;
+}
+
+.c4 {
+    font-size: 20pt;
+}
+
+.c5 {
+    font-weight: 600;
+}
+
+.c6 {
+    margin-top: 10px;
+}
+
+.column3 {
+    display: inline-block;
+}
+
+.img1 {
+    background-image: url(./img/eric-muhr-zlYgNmhfP4Y-unsplash.jpg);
+    background-size: cover;
+    width: auto;
+    height: 200px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #c1cfd2;
+    cursor: pointer;
+    transition: color .5s ease-in-out,
+        box-shadow .5s ease-in-out;
+}
+
+.dropdown:hover {
+    display: block;
+    box-shadow: inset 300px 0 0 0 #c1cfd2;
+    color: rgb(0, 0, 0);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content p {
+    padding: 5px;
+    display: block;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+
+    animation-name: dropdown;
+    animation-duration: 1000ms;
+    animation-direction: normal;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@keyframes dropdown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.img2 {
+    background-image: url(./img/zetong-li-vHIOWBWo3rc-unsplash.jpg);
+    background-size: cover;
+    width: auto;
+    height: 200px;
+}
+
+.img3 {
+    background-image: url(./img/yuanpang-wa-cFAQQUCE6W0-unsplash.jpg);
+    background-size: cover;
+    width: auto;
+    height: 200px;
+}
