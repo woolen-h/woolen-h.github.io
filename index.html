@@ -1,60 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>woolen-h</title>
+    <!-- 폰트 css -->
     <link rel="stylesheet" href="https://use.typekit.net/cwn0ytd.css">
+    <!-- reset css -->
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="scss/home.css">
+    <script>
+        // adobe font css
+        (function (d) {
+            var config = {
+                kitId: 'zxj1ecc',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 </head>
+
 <body>
-    <div class="header">
-        <div class="logo">
+    <header>
+        <div class="head">
+            <div>logo</div>
+            <div>|</div>
+            <div>menu1</div>
+            <div>menu2</div>
+        </div>
+        <div class="head search">search</div>
+    </header>
+    <main>
+        <aside>
             <div>
-                <img src="/images/moon.png" alt="moon" class="logo_image">
+                <div class="profile image">
+                    <img src="" alt="">
+                </div>
+                <div>홍길동</div>
+                <div>웹퍼블리셔</div>
+                <div>서울</div>
+                <div><span>git @00000</span> | <span>insta @00000</span></div>
+                <div>updated on 2023.07.13</div>
             </div>
-            &nbsp;&nbsp;
-            <div>
-                Woolen_h
+        </aside>
+        <section class="body">
+            <nav>
+                <div>mini menu1</div>
+                <div>mini menu2</div>
+                <div>mini menu3</div>
+                <div>mini menu4</div>
+                <div>mini menu5</div>
+            </nav>
+            <div class="content">
+                <div class="content-box">
+                    <div>thumbnail img</div>
+                    <div>title</div>
+                    <hr>
+                    <div>stack</div>
+                </div>
+                <div class="content-box">
+                    <div>thumbnail img</div>
+                    <div>title</div>
+                    <hr>
+                    <div>stack</div>
+                </div>
+                <div class="content-box">
+                    <div>thumbnail img</div>
+                    <div>title</div>
+                    <hr>
+                    <div>stack</div>
+                </div>
+
+                <div class="content-box">
+                    <div>thumbnail img</div>
+                    <div>title</div>
+                    <hr>
+                    <div>stack</div>
+                </div>
+                <div class="content-box">
+                    <div>thumbnail img</div>
+                    <div>title</div>
+                    <hr>
+                    <div>stack</div>
+                </div>
+                <div class="content-box">
+                    <div>thumbnail img</div>
+                    <div>title</div>
+                    <hr>
+                    <div>stack</div>
+                </div>
+
+                <div class="content-box">
+                    <div>thumbnail img</div>
+                    <div>title</div>
+                    <hr>
+                    <div>stack</div>
+                </div>
+                <div class="content-box">
+                    <div>thumbnail img</div>
+                    <div>title</div>
+                    <hr>
+                    <div>stack</div>
+                </div>
+                <div class="content-box">
+                    <div>thumbnail img</div>
+                    <div>title</div>
+                    <hr>
+                    <div>stack</div>
+                </div>
             </div>
-        </div>
-        <!-- logo end -->
-        <div class="menu">
-            <div>Developer / Designer</div>
-        </div>
-        <!-- menu end -->
-    </div>
-    <div class="content">
-        <div class="content-box">
-            <object data="practice-site/[230206]Self-Study_homepage.html" type="text/html" class="object"></object>
-        </div>
-        <div class="content-box">
-            <object data="practice-site/[230207]Self-Study_homepage.html" type="text/html" class="object"></object>
-        </div>
-        <div class="content-box">
-            <object data="practice-site/[230213] Self_Study(Shopping-site)_grid.html" type="text/html" class="object"></object>
-        </div>
-    </div>
-    <div class="content">
-        <div class="content-box">
-            <a href="practice-site/[230216] p_shop_01.html">
-                <img src="images/29CM_practice_thumb.png" class="thumb"></img>
-            </a>
-        </div>
-        <div class="content-box">
-            <object data="practice-site/[230221] site_01.html" type="text/html" class="object"></object>
-        </div>
-        <div class="content-box">
-            <object data="http://xibit-gallery.com/" type="text/html" class="object"></object>
-        </div>
-    </div>
-    <!-- content end -->
-    <div class="footer">
-        <ul class="foot_info">
-        </ul>
-    </div>
+        </section>
+    </main>
+    <footer></footer>
 </body>
 <script src="js/script.js"></script>
+
 </html>

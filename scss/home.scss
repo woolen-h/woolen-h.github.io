@@ -1,0 +1,88 @@
+@import "variable.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: scroll;
+  padding: 50px 150px;
+  background-color: black;
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: $basic-bg-color;
+  margin-bottom: $basic-gap;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: $basic-gap;
+}
+
+.head {
+  width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.head.search {
+  display: flex;
+  justify-content: center;
+}
+
+aside {
+  width: 350px;
+  background-color: $basic-bg-color;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.body {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: $basic-gap;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.profile.image {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  background-color: aliceblue;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+
+.content-box {
+  width: 33.33%;
+  background-color: $basic-bg-color;
+  border-radius: 15px;
+}
