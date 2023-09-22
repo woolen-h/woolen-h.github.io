@@ -1,12 +1,16 @@
 * {
   box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+hr {
+  border: 1px solid #ddd;
 }
 
 body {
   overflow-y: scroll;
-  padding: 50px 150px;
-  background-color: black;
-  color: white;
+  padding-top: 200px;
+  background-color: #fff;
 }
 
 body::-webkit-scrollbar {
@@ -15,19 +19,50 @@ body::-webkit-scrollbar {
 
 header {
   width: 100%;
+  padding: 20px 80px;
+  position: fixed;
+  font-size: 16px;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
-  background-color: #252525;
-  margin-bottom: 30px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+}
+header h1 {
+  font-size: 30px;
+  font-weight: 900;
+  flex: 1;
+}
+header ul {
+  display: flex;
+  line-height: 30px;
+  justify-content: space-between;
+  flex: 2;
+}
+header div {
+  flex: 1;
+  line-height: 30px;
+  text-align: right;
 }
 
 main {
   width: 100%;
+}
+main section.top h2 {
+  font-size: 80px;
+  font-weight: 900;
+  padding: 0 80px;
+  padding-bottom: 300px;
+}
+main section.top ul {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  padding: 20px 80px;
+}
+main section.top p.scroll {
+  width: 100%;
+  padding-top: 80px;
+  text-align: center;
+  color: #aaa;
 }
 
 .head {
@@ -35,7 +70,6 @@ main {
   padding: 20px 30px;
   display: flex;
   justify-content: space-between;
-  color: white;
 }
 
 .head.search {
@@ -61,7 +95,6 @@ nav {
   margin-bottom: 15px;
   border-radius: 15px;
   padding: 20px;
-  background-color: black;
   border: 1px solid white;
 }
 
