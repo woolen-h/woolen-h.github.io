@@ -1,0 +1,17 @@
+.icon_dot {
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+  }
+  .icon_arrow {
+    display: inline-block;
+    background-image: url('/images/icon_arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 1.25rem 1.25rem;    background-position: 50%;
+  }

@@ -1,4 +1,5 @@
 @import "variable.scss";
+@import "icon.scss";
 
 html {
   font-size: 12px;
@@ -85,26 +86,26 @@ main {
       ul {
         display: flex;
         justify-content: space-between;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: 500;
+        line-height: 1.8rem;
         padding: 20px 80px;
 
         li.round_box {
           span {
-            display: inline-block;
+            position: relative;
+            top: -2rem;
             border: 1px solid #000;
-            padding: 10px 15px;
-            border-radius: 20px;
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            -ms-border-radius: 20px;
-            -o-border-radius: 20px;
-            margin-top: -7px;
-
+            padding: .75rem 1.25rem;
+            border-radius: 2rem;
+              
             + span {
+              top: -.75rem;
               margin-left: 5px;
+              width: 3.75rem;
+              height: 3.75rem;
             }
-          }     
+          }
         }
       }
       p.scroll {
@@ -122,7 +123,7 @@ main {
 .middle {
     border-top-left-radius: 1.75rem;
     border-top-right-radius: 1.75rem;
-    background-color: #04adbf;
+    background-color: $pink-1-hex;
     margin: 1rem 0;
     padding-top: 10rem;
     padding-bottom: 3rem;
@@ -150,7 +151,7 @@ main {
   position: relative;
   top: -3rem;
   color: #fff;
-  background-color: #f25c05;
+  background-color: $green-4-hex;
   padding-bottom: 5rem;
 
   h4 {
@@ -314,16 +315,4 @@ main {
       }
     }
   }
-}
-
-.icon_dot {
-  display: inline-block;
-  width: 0.75rem;
-  height: 0.75rem;
-  background-color: #fff;
-  border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
 }
