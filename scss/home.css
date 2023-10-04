@@ -118,10 +118,16 @@ main section.top ul li.round_box span + span {
   width: 3.75rem;
   height: 3.75rem;
 }
-main section.top p.scroll {
+main section.top ul li.round_box:hover span {
+  background-color: #000;
+  color: #fff;
+  transition: 0.25s ease-in;
+}
+main section.top .swiper {
   width: 100%;
-  padding-top: 60px;
-  padding-bottom: 10px;
+  height: 2rem;
+  margin-top: 60px;
+  margin-bottom: 10px;
   text-align: center;
   color: #ccc;
   font-size: 1.5rem;
@@ -310,4 +316,9 @@ main section.top p.scroll {
   width: 15px;
   height: 15px;
   top: 2px;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
 }/*# sourceMappingURL=home.css.map */
