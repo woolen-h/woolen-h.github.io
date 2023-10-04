@@ -210,11 +210,15 @@ main section.top p.scroll {
   padding: 6rem 4.5rem 4rem;
   font-size: 5.5rem;
 }
+.bottom .project_wrapper {
+  display: flex;
+}
 .bottom .project_wrapper h6 {
   font-size: 2rem;
   padding: 0;
 }
 .bottom .project_wrapper .project_01 {
+  width: 100%;
   padding: 6rem 4.5rem 4rem;
 }
 .bottom .project_wrapper .project_01 .icon_dot {
@@ -225,11 +229,11 @@ main section.top p.scroll {
   margin-right: 0.5rem;
 }
 .bottom .project_wrapper .project_01 .proj_img_wrapper {
-  width: 50%;
+  width: 100%;
   height: 50rem;
   padding: 2rem 0;
 }
-.bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img_01 {
+.bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -239,7 +243,50 @@ main section.top p.scroll {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
   background-size: cover;
+}
+.bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img.img01 {
   background-image: url("/images/proj_img_01.jpg");
+}
+.bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img.img02 {
+  background-image: url("/images/proj_img_02.jpg");
+}
+.bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img.img03 {
+  background-image: url("/images/proj_img_03.jpg");
+}
+.bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img.img04 {
+  background-image: url("/images/proj_img_04.jpg");
+}
+.bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img.img05 {
+  background-image: url("/images/proj_img_05.jpg");
+}
+.bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img.img06 {
+  background-image: url("/images/proj_img_06.jpg");
+}
+.bottom .full-page {
+  display: flex;
+  justify-content: center;
+}
+.bottom .full-page .case_studies {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  padding: 15px 25px;
+  margin-bottom: 100px;
+  background-color: #000;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.bottom .full-page .case_studies .icon_dot {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  top: 2px;
 }
 
 .icon_dot {
