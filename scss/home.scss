@@ -233,6 +233,8 @@ main {
   }
   .project_wrapper {
     display: flex;
+    gap: 1.5rem;
+    padding: 0 5rem;
     
     h6 {
       font-size: 2rem;
@@ -240,7 +242,7 @@ main {
     }
     .project_01 {
       width: 100%;
-      padding: 6rem 4.5rem 4rem;
+      padding: 3rem 0;
 
       .icon_dot {
         width: 1.25rem;
@@ -296,7 +298,7 @@ main {
       justify-content: space-between;
       width: 350px;
       padding: 15px 25px;
-      margin-bottom: 100px;
+      margin: 100px 0;
       background-color: #000;
       color: #fff;
       font-size: 24px;
