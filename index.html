@@ -8,6 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@700&family=Quicksand:wght@300;400;500;600;700&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&family=Syne&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="scss/home.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <title>woolen - Portfolio</title>
 </head>
 <body>
@@ -35,7 +41,13 @@
                 <li>From the first pitch to IPO</li>
                 <li class="round_box"><span>START THE PROJECT</span><span class="icon_arrow"></span></li>
             </ul>
-            <p class="scroll">Scroll down</p>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Scroll down</div>
+                    <div class="swiper-slide">Scroll down</div>
+                    <div class="swiper-slide">Scroll down</div>
+                </div>
+            </div>
         </section>
         <section class="middle">
             <div class="text-banner">
@@ -157,5 +169,6 @@
         </section>
     </main>
     <footer></footer>
+    <script src="/js/script.js" type="module"></script>
 </body>
 </html>

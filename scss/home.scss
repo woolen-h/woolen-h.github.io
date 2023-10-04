@@ -106,12 +106,18 @@ main {
               height: 3.75rem;
             }
           }
+          &:hover span {
+            background-color: #000;
+            color: #fff;
+            transition: .25s ease-in;
+          }
         }
       }
-      p.scroll {
+      .swiper {
         width: 100%;
-        padding-top: 60px;
-        padding-bottom: 10px;
+        height: 2rem;
+        margin-top: 60px;
+        margin-bottom: 10px;
         text-align: center;
         color: #ccc;
         font-size: 1.5rem;
@@ -317,4 +323,9 @@ main {
       }
     }
   }
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
 }
