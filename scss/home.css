@@ -1,3 +1,24 @@
+/* Color Theme Swatches in Hex */
+.icon_dot {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.icon_arrow {
+  display: inline-block;
+  background-image: url("/images/icon_arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 1.25rem 1.25rem;
+  background-position: 50%;
+}
+
 html {
   font-size: 12px;
 }
@@ -79,23 +100,23 @@ main section.top h2 span {
 main section.top ul {
   display: flex;
   justify-content: space-between;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
+  line-height: 1.8rem;
   padding: 20px 80px;
 }
 main section.top ul li.round_box span {
-  display: inline-block;
+  position: relative;
+  top: -2rem;
   border: 1px solid #000;
-  padding: 10px 15px;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  margin-top: -7px;
+  padding: 0.75rem 1.25rem;
+  border-radius: 2rem;
 }
 main section.top ul li.round_box span + span {
+  top: -0.75rem;
   margin-left: 5px;
+  width: 3.75rem;
+  height: 3.75rem;
 }
 main section.top p.scroll {
   width: 100%;
@@ -110,7 +131,7 @@ main section.top p.scroll {
 .middle {
   border-top-left-radius: 1.75rem;
   border-top-right-radius: 1.75rem;
-  background-color: #04adbf;
+  background-color: #F285E0;
   margin: 1rem 0;
   padding-top: 10rem;
   padding-bottom: 3rem;
@@ -136,7 +157,7 @@ main section.top p.scroll {
   position: relative;
   top: -3rem;
   color: #fff;
-  background-color: #f25c05;
+  background-color: #025940;
   padding-bottom: 5rem;
 }
 .content h4 {
@@ -287,16 +308,4 @@ main section.top p.scroll {
   width: 15px;
   height: 15px;
   top: 2px;
-}
-
-.icon_dot {
-  display: inline-block;
-  width: 0.75rem;
-  height: 0.75rem;
-  background-color: #fff;
-  border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
 }/*# sourceMappingURL=home.css.map */
