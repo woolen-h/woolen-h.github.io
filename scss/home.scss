@@ -124,7 +124,7 @@ main {
         text-align: center;
         color: #ccc;
         font-size: 4rem;
-        font-weight: 500;
+        font-weight: 900;
       }
     }
   }
@@ -203,7 +203,7 @@ main {
     }
     .line_03 {
       display: flex;
-      align-items: end;
+      align-items: flex-end;
       padding-left: 10rem;
       flex: 1;
 
@@ -222,7 +222,7 @@ main {
 
       span {
         display: inline-block;
-        background-color: #000;
+        background-color: $hex-3-color;
         color: #fff;
         font-size: 1.5rem;
         padding: 2rem 2.5rem;
@@ -231,6 +231,11 @@ main {
         -moz-border-radius: 4rem;
         -ms-border-radius: 4rem;
         -o-border-radius: 4rem;
+
+        &:hover {
+          background-color: #000;
+          transition: all .3s ease-in-out;
+        }
       }
       .icon_dot {
         margin-left: 3rem;
@@ -289,14 +294,16 @@ main {
           -moz-border-radius: 1rem;
           -ms-border-radius: 1rem;
           -o-border-radius: 1rem;
-          background-size: cover;
+          background-size: 100%;
+          background-position: 50%;
 
           &.img01 {
             background-image: url('/images/proj_img_01.jpg');
           }
           &.img02 {
             background-image: url('/images/proj_img_02.jpg');
-          }
+            background-position: 50% 30%;
+        }
           &.img03 {
             background-image: url('/images/proj_img_03.jpg');
           }
@@ -309,6 +316,22 @@ main {
           &.img06 {
             background-image: url('/images/proj_img_06.jpg');
           }
+
+          &:hover {
+            margin: 2rem;
+            width: calc(100% - 4rem);
+            height: calc(100% - 4rem);
+            background-size: 105%;
+            transition: all .7s ease-in-out, background-size .7s ease;
+          }
+        }
+      }
+      .proj_tag {
+        span {
+          padding: 10px 15px;
+          border: 1px solid $hex-3-color;
+          border-radius: 20px;
+          margin-right: 5px;
         }
       }
     }
@@ -323,7 +346,7 @@ main {
       width: 350px;
       padding: 15px 25px;
       margin: 100px 0;
-      background-color: #000;
+      background-color: $hex-3-color;
       color: #fff;
       font-size: 24px;
       font-weight: 900;
@@ -338,6 +361,11 @@ main {
         width: 15px;
         height: 15px;
         top: 2px;
+      }
+
+      &:hover {
+        background-color: #000;
+        transition: all .5s ease;
       }
     }
   }
