@@ -134,7 +134,7 @@ main section.top .swiper {
   text-align: center;
   color: #ccc;
   font-size: 4rem;
-  font-weight: 500;
+  font-weight: 900;
 }
 
 .middle {
@@ -206,7 +206,7 @@ main section.top .swiper {
 }
 .content .discript .line_03 {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   padding-left: 10rem;
   flex: 1;
 }
@@ -223,7 +223,7 @@ main section.top .swiper {
 }
 .content .prof_wrapper .profile span {
   display: inline-block;
-  background-color: #000;
+  background-color: #212226;
   color: #fff;
   font-size: 1.5rem;
   padding: 2rem 2.5rem;
@@ -232,6 +232,10 @@ main section.top .swiper {
   -moz-border-radius: 4rem;
   -ms-border-radius: 4rem;
   -o-border-radius: 4rem;
+}
+.content .prof_wrapper .profile span:hover {
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
 }
 .content .prof_wrapper .profile .icon_dot {
   margin-left: 3rem;
@@ -287,13 +291,15 @@ main section.top .swiper {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
-  background-size: cover;
+  background-size: 100%;
+  background-position: 50%;
 }
 .bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img.img01 {
   background-image: url("/images/proj_img_01.jpg");
 }
 .bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img.img02 {
   background-image: url("/images/proj_img_02.jpg");
+  background-position: 50% 30%;
 }
 .bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img.img03 {
   background-image: url("/images/proj_img_03.jpg");
@@ -307,6 +313,19 @@ main section.top .swiper {
 .bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img.img06 {
   background-image: url("/images/proj_img_06.jpg");
 }
+.bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img:hover {
+  margin: 2rem;
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+  background-size: 105%;
+  transition: all 0.7s ease-in-out, background-size 0.7s ease;
+}
+.bottom .project_wrapper .project_01 .proj_tag span {
+  padding: 10px 15px;
+  border: 1px solid #212226;
+  border-radius: 20px;
+  margin-right: 5px;
+}
 .bottom .full-page {
   display: flex;
   justify-content: center;
@@ -317,7 +336,7 @@ main section.top .swiper {
   width: 350px;
   padding: 15px 25px;
   margin: 100px 0;
-  background-color: #000;
+  background-color: #212226;
   color: #fff;
   font-size: 24px;
   font-weight: 900;
@@ -332,4 +351,8 @@ main section.top .swiper {
   width: 15px;
   height: 15px;
   top: 2px;
+}
+.bottom .full-page .case_studies:hover {
+  background-color: #000;
+  transition: all 0.5s ease;
 }/*# sourceMappingURL=home.css.map */
