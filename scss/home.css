@@ -135,6 +135,7 @@ main section.top .swiper {
   color: #ccc;
   font-size: 4rem;
   font-weight: 900;
+  z-index: -1;
 }
 
 .middle {
@@ -144,6 +145,8 @@ main section.top .swiper {
   margin: 1rem 0;
   padding-top: 8rem;
   padding-bottom: 3rem;
+  transform: translateY(0%);
+  transition: transform 2s ease 0.2s;
 }
 .middle .text-banner {
   margin-top: 2.75rem;
@@ -170,11 +173,14 @@ main section.top .swiper {
 
 .content {
   border-radius: 1.75rem;
+  width: 100%;
   position: relative;
   top: -3rem;
   color: #fff;
   background-color: #0622BF;
   padding-bottom: 5rem;
+  transform: translateY(0%);
+  transition: transform 2s ease 0.4s;
 }
 .content hr {
   background-color: #fff;
@@ -253,6 +259,10 @@ main section.top .swiper {
   -o-border-radius: 1rem;
 }
 
+.bottom {
+  position: relative;
+  top: -200px;
+}
 .bottom h6 {
   padding: 6rem 4.5rem 4rem;
   font-size: 5.5rem;
