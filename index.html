@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@700&family=Quicksand:wght@300;400;500;600;700&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&family=Syne&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@700&family=Quicksand:wght@300;400;500;600;700&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&family=Syne&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="scss/home.css">
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+    <link rel="icon" href="/images/favicon-16x16.png" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <title>woolen - Portfolio</title>
 </head>
+
 <body>
     <header>
         <h1>woolen</h1>
@@ -56,7 +57,7 @@
             <div class="text-banner">
                 <hr>
                 <div class="wrap">
-                    <div  class='marquee' data-duration='15000' data-gap='10' data-duplicated='true'>
+                    <div class='marquee' data-duration='15000' data-gap='10' data-duplicated='true'>
                         <ul>
                             <li>HI, IM WOOL!</li>
                             <li>
@@ -68,41 +69,47 @@
                 <hr>
             </div>
         </section>
-        <section class="content">
-            <h4>
-                I'm <span>UX/UI Developer</span>,<br>
-                Worked in Book Publishing Company<br> Now in <span>Web Agency</span>.
-            </h4>
-            <hr>
-            <div class="discript">
-                <p class="line_01">What you can expect:</p>
-                <p class="line_02">
-                    <span>
-                    We create tailored presentations to help you persuade your colleagues, clients, or investors. Whether it’s live or digital, delivered for one or a hundred people.
-                    <br><br>
-                    We believe the mix of strategy and design (with a bit of coffee) is what makes your message clear, convincing, and captivating.
-                    </span>
-                </p>
-                <p class="line_03">
-                    <span>
-                        <span>S:</span><br>
-                        <br>
-                        <a>Instagram</a><br>
-                        <a>Behance</a><br>
-                        <a>Facebook</a><br>
-                        <a>Linkedin</a><br>
-                    </span>
-                </p>
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                <section class="content" data-speed="2">
+                    <h4>
+                        I'm <span>UX/UI Developer</span>,<br>
+                        Worked in Book Publishing Company<br> Now in <span>Web Agency</span>.
+                    </h4>
+                    <hr>
+                    <div class="discript">
+                        <p class="line_01">What you can expect:</p>
+                        <p class="line_02">
+                            <span>
+                                We create tailored presentations to help you persuade your colleagues, clients, or
+                                investors. Whether it’s live or digital, delivered for one or a hundred people.
+                                <br><br>
+                                We believe the mix of strategy and design (with a bit of coffee) is what makes your
+                                message clear, convincing, and captivating.
+                            </span>
+                        </p>
+                        <p class="line_03">
+                            <span>
+                                <span>S:</span><br>
+                                <br>
+                                <a>Instagram</a><br>
+                                <a>Behance</a><br>
+                                <a>Facebook</a><br>
+                                <a>Linkedin</a><br>
+                            </span>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="prof_wrapper">
+                        <div class="profile">
+                            <h5>Our approach:</h5>
+                            <span>READ MORE<i class="icon_dot"></i></span>
+                        </div>
+                        <div class="prof_img"></div>
+                    </div>
+                </section>
             </div>
-            <hr>
-            <div class="prof_wrapper">
-                <div class="profile">
-                    <h5>Our approach:</h5>
-                    <span>READ MORE<i class="icon_dot"></i></span>
-                </div>
-                <div class="prof_img"></div>
-            </div>
-        </section>
+        </div>
         <section class="bottom">
             <h6>Featured projects</h6>
             <hr>
@@ -181,4 +188,5 @@
     <footer></footer>
     <script src="/js/script.js" type="module"></script>
 </body>
+
 </html>

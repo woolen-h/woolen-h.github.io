@@ -125,6 +125,7 @@ main {
         color: #ccc;
         font-size: 4rem;
         font-weight: 900;
+        z-index: -1;
       }
     }
   }
@@ -136,6 +137,8 @@ main {
   margin: 1rem 0;
   padding-top: 8rem;
   padding-bottom: 3rem;
+  transform: translateY(0%);
+  transition: transform 2s ease .2s;
 
   .text-banner {
     margin-top: 2.75rem;
@@ -165,11 +168,14 @@ main {
 }
 .content {
   border-radius: 1.75rem;
+  width: 100%;
   position: relative;
   top: -3rem;
   color: #fff;
   background-color: $hex-4-color;
   padding-bottom: 5rem;
+  transform: translateY(0%);
+  transition: transform 2s ease .4s;
 
   hr {
     background-color: #fff;
@@ -256,6 +262,8 @@ main {
   }
 }
 .bottom {
+  position: relative;
+  top: -200px;
   h6 {
   padding: 6rem 4.5rem 4rem;
   font-size: 5.5rem;
@@ -332,6 +340,7 @@ main {
           border: 1px solid $hex-3-color;
           border-radius: 20px;
           margin-right: 5px;
+
         }
       }
     }

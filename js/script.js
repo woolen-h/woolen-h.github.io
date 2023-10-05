@@ -1,6 +1,6 @@
 const swiper = new Swiper('.swiper', {
 // Optional parameters
-direction: 'vertical',
+direction: 'vertical', 
 speed: 1500,
 loop: true,
 autoplay: {
@@ -26,3 +26,18 @@ $('.marquee').marquee({
   //true or false - should the marquee be duplicated to show an effect of continues flow
   duplicated: true
 });
+
+// 스크롤 이미지 애니메이션
+$(function () {
+  $(window).scroll(function () {
+      var top = $(window).scrollTop();
+
+      if (top > 120) {
+          $('.middle').css({ 'transform': 'translateY(-100px)'});
+      }
+
+      if (top > 150) {
+        $('.content').css({ 'transform': 'translateY(-230px)'});
+      }
+  })
+})
