@@ -36,7 +36,7 @@ $(function () {
           $('.middle').css({ 'transform': 'translateY(-100px)'});
       }
 
-      if (top > 150) {
+      if (top > 180) {
         $('.content').css({ 'transform': 'translateY(-230px)'});
       }
   })

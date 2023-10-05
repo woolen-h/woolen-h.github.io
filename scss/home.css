@@ -266,6 +266,7 @@ main section.top .swiper {
 .bottom h6 {
   padding: 6rem 4.5rem 4rem;
   font-size: 5.5rem;
+  z-index: -2;
 }
 .bottom .project_wrapper {
   display: flex;

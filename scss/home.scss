@@ -264,9 +264,11 @@ main {
 .bottom {
   position: relative;
   top: -200px;
+
   h6 {
-  padding: 6rem 4.5rem 4rem;
-  font-size: 5.5rem;
+    padding: 6rem 4.5rem 4rem;
+    font-size: 5.5rem;
+    z-index: -2;
   }
   .project_wrapper {
     display: flex;
