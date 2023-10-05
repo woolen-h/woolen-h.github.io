@@ -228,23 +228,33 @@ main section.top .swiper {
   font-size: 5.5rem;
 }
 .content .prof_wrapper .profile span {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 180px;
   background-color: #212226;
   color: #fff;
   font-size: 1.5rem;
-  padding: 2rem 2.5rem;
+  padding: 1rem 1.5rem;
+  line-height: 2.5rem;
   border-radius: 4rem;
   -webkit-border-radius: 4rem;
   -moz-border-radius: 4rem;
   -ms-border-radius: 4rem;
   -o-border-radius: 4rem;
 }
+.content .prof_wrapper .profile span .icon_dot {
+  top: 5px;
+}
 .content .prof_wrapper .profile span:hover {
-  background-color: #000;
+  background-color: #fff;
+  color: #212226;
   transition: all 0.3s ease-in-out;
 }
-.content .prof_wrapper .profile .icon_dot {
-  margin-left: 3rem;
+.content .prof_wrapper .profile span:hover .icon_dot {
+  background-color: #212226;
+  transition: all 0.3s ease-in-out;
 }
 .content .prof_wrapper .prof_img {
   width: 50%;
@@ -336,6 +346,11 @@ main section.top .swiper {
   border: 1px solid #212226;
   border-radius: 20px;
   margin-right: 5px;
+}
+.bottom .project_wrapper .project_01 .proj_tag span:hover {
+  background-color: #212226;
+  color: #fff;
+  transition: all 0.5s ease;
 }
 .bottom .full-page {
   display: flex;
