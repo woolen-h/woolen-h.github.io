@@ -27,6 +27,11 @@ html {
   box-sizing: border-box;
   font-family: "Syne", sans-serif;
   letter-spacing: -1px;
+  cursor: default;
+}
+
+a {
+  cursor: pointer;
 }
 
 hr {
@@ -87,6 +92,7 @@ main section.top h2 {
   padding-bottom: 130px;
   font-family: "Oswald", sans-serif;
   letter-spacing: -6px;
+  cursor: default;
 }
 main section.top h2 span {
   display: inline-block;
@@ -109,6 +115,7 @@ main section.top ul {
   padding: 20px 80px;
 }
 main section.top ul li.round_box span {
+  cursor: pointer;
   position: relative;
   top: -2rem;
   border: 1px solid #000;
@@ -243,6 +250,7 @@ main section.top .swiper {
   -moz-border-radius: 4rem;
   -ms-border-radius: 4rem;
   -o-border-radius: 4rem;
+  cursor: pointer;
 }
 .content .prof_wrapper .profile span .icon_dot {
   top: 5px;
@@ -346,6 +354,7 @@ main section.top .swiper {
   border: 1px solid #212226;
   border-radius: 20px;
   margin-right: 5px;
+  cursor: pointer;
 }
 .bottom .project_wrapper .project_01 .proj_tag span:hover {
   background-color: #212226;
@@ -371,6 +380,7 @@ main section.top .swiper {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+  cursor: pointer;
 }
 .bottom .full-page .case_studies .icon_dot {
   position: relative;
