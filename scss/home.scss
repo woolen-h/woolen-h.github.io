@@ -5,10 +5,6 @@ html {
   font-size: 12px;
 }
 
-body {
-  background-color: #EDEDE8 !important;
-}
-
 * {
   box-sizing: border-box;
   font-family: 'Syne', sans-serif;
@@ -30,7 +26,7 @@ hr {
 body {
   overflow-y: scroll;
   padding-top: 200px;
-  background-color: #fff;
+  background-color: #EDEDE8;
 }
 
 body::-webkit-scrollbar {
@@ -49,7 +45,14 @@ header {
   letter-spacing: -1px;
   font-weight: 500;
   justify-content: space-between;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 100;
+  color: $hex-3-color;
 
+  &.active {
+    color: #EDEDE8;
+  }
   h1 {
     font-family: 'Righteous', sans-serif;
     font-size: 3rem;

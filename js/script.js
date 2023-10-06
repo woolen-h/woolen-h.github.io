@@ -41,3 +41,15 @@ $(function () {
       }
   })
 })
+$(function () {
+  var sec2Top = $(".top").offset().top;
+  var sec3Top = $(".middle").offset().top;
+  var sec4Top = $(".bottom").offset().top;
+  var sec5Top = $("footer").offset().top;
+  
+  if($(this).scrollTop() > sec2Top && $(this).scrollTop() < sec4Top) {
+    $('header').addClass("active");
+  } else {
+    $('header').removeClass("active");
+  }
+})
