@@ -331,8 +331,9 @@ main {
           -moz-border-radius: 1rem;
           -ms-border-radius: 1rem;
           -o-border-radius: 1rem;
-          background-size: 100%;
+          background-size: 150%;
           background-position: 50%;
+          background-repeat: no-repeat;
 
           &.img01 {
             background-image: url('/images/proj_img_01.png');
@@ -358,7 +359,7 @@ main {
             margin: 2rem;
             width: calc(100% - 4rem);
             height: calc(100% - 4rem);
-            background-size: 105%;
+            background-size: 130%;
             transition: all .7s ease-in-out, background-size .7s ease;
           }
         }
