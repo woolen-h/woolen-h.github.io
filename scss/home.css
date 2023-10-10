@@ -332,7 +332,7 @@ main section.top .swiper {
   background-position: 50%;
 }
 .bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img.img01 {
-  background-image: url("/images/proj_img_01.jpg");
+  background-image: url("/images/proj_img_01.png");
 }
 .bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img.img02 {
   background-image: url("/images/proj_img_02.jpg");
