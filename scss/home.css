@@ -66,10 +66,6 @@ header {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 100;
-  color: #212226;
-}
-header.active {
-  color: #EDEDE8;
 }
 header h1 {
   font-family: "Righteous", sans-serif;
@@ -82,6 +78,10 @@ header ul {
   line-height: 30px;
   justify-content: space-between;
   flex: 1;
+}
+header a {
+  mix-blend-mode: difference;
+  color: #212226;
 }
 header div {
   flex: 1;

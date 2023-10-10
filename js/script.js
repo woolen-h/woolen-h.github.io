@@ -41,15 +41,23 @@ $(function () {
       }
   })
 })
+
+// 컬러 체인지
+
 $(function () {
-  var sec2Top = $(".top").offset().top;
-  var sec3Top = $(".middle").offset().top;
-  var sec4Top = $(".bottom").offset().top;
-  var sec5Top = $("footer").offset().top;
-  
-  if($(this).scrollTop() > sec2Top && $(this).scrollTop() < sec4Top) {
-    $('header').addClass("active");
-  } else {
-    $('header').removeClass("active");
-  }
+  $(window).scroll(function () {
+      var top = $(window).scrollTop();
+
+      if (0 < top && 800 > top) {
+        $('header a').css({ 'color': '#212226'});
+      }
+
+      if (800 < top && 2800 > top) {
+        $('header a').css({ 'color': '#fff'});
+      }
+
+      if (2800 < top) {
+        $('header a').css({ 'color': '#212226'});
+      }
+  })
 })
