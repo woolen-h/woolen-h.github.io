@@ -13,10 +13,6 @@
 
 .icon_arrow {
   display: inline-block;
-  background-image: url("/images/icon_arrow.svg");
-  background-repeat: no-repeat;
-  background-size: 1.25rem 1.25rem;
-  background-position: 50%;
 }
 
 html {
@@ -124,20 +120,27 @@ main section.top ul {
 main section.top ul li.round_box span {
   cursor: pointer;
   position: relative;
-  top: -2rem;
   border: 1px solid #000;
   padding: 0.75rem 1.25rem;
   border-radius: 2rem;
 }
 main section.top ul li.round_box span + span {
-  top: -0.75rem;
+  top: -0.25rem;
   margin-left: 5px;
   width: 3.75rem;
   height: 3.75rem;
 }
+main section.top ul li.round_box span + span img {
+  position: relative;
+  top: 0.1rem;
+}
 main section.top ul li.round_box:hover span {
   background-color: #000;
   color: #fff;
+  transition: 0.25s ease-in;
+}
+main section.top ul li.round_box:hover span img {
+  filter: invert(100%);
   transition: 0.25s ease-in;
 }
 main section.top .swiper {
