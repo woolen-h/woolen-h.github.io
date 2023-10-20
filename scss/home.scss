@@ -189,6 +189,8 @@ main {
     font-family: 'Oswald', sans-serif;
 
     div.marquee {
+      overflow: hidden;
+
       ul {
         display: flex;
         width: max-content;
@@ -222,10 +224,11 @@ main {
   hr {
     background-color: #fff;
   }
-
   h4 {
     padding: 9rem 4.5rem;
     font-size: 5.5rem;
+    line-height: 1.25;
+
     span {
       text-decoration: underline;
       text-decoration-thickness: 1px;
@@ -350,8 +353,16 @@ main {
         height: 50rem;
         padding: 2rem 0;
 
+        @media screen and (max-width: 1024px) {
+          height: 40rem;
+        }
+
+        @media screen and (max-width: 768px) {
+          height: 30rem;
+        }
+
         .proj_img {
-          display: inline-block;
+          display: block;
           width: 100%;
           height: 100%;
           border-radius: 1rem;
@@ -359,9 +370,9 @@ main {
           -moz-border-radius: 1rem;
           -ms-border-radius: 1rem;
           -o-border-radius: 1rem;
-          background-size: 150%;
           background-position: 50%;
           background-repeat: no-repeat;
+          background-size: cover;
 
           &.img01 {
             background-image: url('/images/proj_img_01.png');
@@ -387,7 +398,6 @@ main {
             margin: 2rem;
             width: calc(100% - 4rem);
             height: calc(100% - 4rem);
-            background-size: 130%;
             transition: all .7s ease-in-out, background-size .7s ease;
           }
         }

@@ -193,6 +193,9 @@ main section.top .swiper {
   color: #fff;
   font-family: "Oswald", sans-serif;
 }
+.middle .text-banner div.marquee {
+  overflow: hidden;
+}
 .middle .text-banner div.marquee ul {
   display: flex;
   width: -moz-max-content;
@@ -227,6 +230,7 @@ main section.top .swiper {
 .content h4 {
   padding: 9rem 4.5rem;
   font-size: 5.5rem;
+  line-height: 1.25;
 }
 .content h4 span {
   text-decoration: underline;
@@ -343,8 +347,18 @@ main section.top .swiper {
   height: 50rem;
   padding: 2rem 0;
 }
+@media screen and (max-width: 1024px) {
+  .bottom .project_wrapper .project_01 .proj_img_wrapper {
+    height: 40rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bottom .project_wrapper .project_01 .proj_img_wrapper {
+    height: 30rem;
+  }
+}
 .bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img {
-  display: inline-block;
+  display: block;
   width: 100%;
   height: 100%;
   border-radius: 1rem;
@@ -352,9 +366,9 @@ main section.top .swiper {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
-  background-size: 150%;
   background-position: 50%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img.img01 {
   background-image: url("/images/proj_img_01.png");
@@ -379,7 +393,6 @@ main section.top .swiper {
   margin: 2rem;
   width: calc(100% - 4rem);
   height: calc(100% - 4rem);
-  background-size: 130%;
   transition: all 0.7s ease-in-out, background-size 0.7s ease;
 }
 .bottom .project_wrapper .project_01 .proj_tag {
