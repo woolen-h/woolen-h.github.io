@@ -31,16 +31,17 @@ $('.marquee').marquee({
 $(function () {
   $(window).scroll(function () {
       var top = $(window).scrollTop();
-
-      if (top > 120) {
+      if (matchMedia("screen and (min-width: 1024px)").matches) {
+        if (top > 120) {
           $('.middle').css({ 'transform': 'translateY(-100px)'});
-      }
-
-      if (top > 180) {
-        $('.content').css({ 'transform': 'translateY(-230px)'});
+        }
+        if (top > 180) {
+          $('.content').css({ 'transform': 'translateY(-230px)'});
+        }
       }
   })
 })
+
 
 // 컬러 체인지
 
@@ -48,7 +49,7 @@ $(function () {
   $(window).scroll(function () {
       var top = $(window).scrollTop();
 
-      if (0 < top && 800 > top) {
+      if (0 < top && "800" > top) {
         $('header a').css({ 'color': '#212226'});
       }
 

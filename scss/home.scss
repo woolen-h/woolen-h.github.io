@@ -3,6 +3,22 @@
 
 html {
   font-size: 12px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 11px;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 9px;
+  }
+
+  @media screen and (max-width: 475px) {
+    font-size: 7px;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 5px;
+  }
 }
 
 * {
@@ -24,8 +40,8 @@ hr {
 }
 
 body {
+  width: 100%;
   overflow-y: scroll;
-  padding-top: 200px;
   background-color: #EDEDE8;
 }
 
@@ -34,13 +50,13 @@ body::-webkit-scrollbar {
 }
 
 header {
-  width: 100%;
-  padding: 20px 80px;
-  position: fixed;
-  font-size: 1.75rem;
-  font-family: 'Quicksand', sans-serif;
+  width: 100vw;
+  position: sticky;
   top: 0;
   left: 0;
+  padding: 3rem 6rem;
+  font-size: 1.75rem;
+  font-family: 'Quicksand', sans-serif;
   display: flex;
   letter-spacing: -1px;
   font-weight: 500;
@@ -48,6 +64,7 @@ header {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 100;
+
   h1 {
     font-family: 'Righteous', sans-serif;
     font-size: 3rem;
@@ -73,14 +90,16 @@ header {
 
 main {
   width: 100%;
+  padding-top: 9rem;
+  position: relative;
 
   section {
     &.top {
       h2 {
         font-size: 11rem;
         font-weight: 900;
-        padding: 0 80px;
-        padding-bottom: 130px;
+        padding: 0 6rem;
+        padding-bottom: 10rem;
         font-family: 'Oswald', sans-serif;
         letter-spacing: -6px;
         cursor: default;
@@ -96,7 +115,7 @@ main {
           -moz-border-radius: 0.5rem;
           -ms-border-radius: 0.5rem;
           -o-border-radius: 0.5rem;
-}
+        }
       }
       ul {
         display: flex;
@@ -104,7 +123,7 @@ main {
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 1.8rem;
-        padding: 20px 80px;
+        padding: 3rem 6rem;
 
         li.round_box {
           span {
@@ -233,7 +252,6 @@ main {
     .line_03 {
       display: flex;
       align-items: flex-end;
-      padding-left: 10rem;
       flex: 1;
 
       li a {
@@ -375,11 +393,16 @@ main {
         }
       }
       .proj_tag {
+        display: flex;
+        flex-wrap: wrap;
+
         span {
-          padding: 10px 15px;
+          padding: 1rem 1.25rem;
+          line-height: 1.2;
           border: 1px solid $hex-3-color;
-          border-radius: 20px;
-          margin-right: 5px;
+          border-radius: 3rem;
+          margin-right: .5rem;
+          margin-bottom: .5rem;
           cursor: pointer;
 
           &:hover {
@@ -398,25 +421,20 @@ main {
     .case_studies {
       display: flex;
       justify-content: space-between;
-      width: 500px;
-      padding: 15px 25px;
+      width: 40rem;
+      padding: 1rem 2rem;
       margin: 100px 0;
       background-color: $hex-3-color;
       color: #fff;
-      font-size: 24px;
+      font-size: 2rem;
       font-weight: 900;
-      border-radius: 30px;
-      -webkit-border-radius: 30px;
-      -moz-border-radius: 30px;
-      -ms-border-radius: 30px;
-      -o-border-radius: 30px;
+      border-radius: 3rem;
       cursor: pointer;
 
       .icon_dot {
-        position: relative;
-        width: 15px;
-        height: 15px;
-        top: 2px;
+        width: 1.25rem;
+        height: 1.25rem;
+        margin: 0.25rem 0;
       }
 
       &:hover {
