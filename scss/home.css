@@ -233,7 +233,7 @@ main section.top .swiper {
   padding-left: 10rem;
   flex: 1;
 }
-.content .discript .line_03 span a {
+.content .discript .line_03 li a {
   box-shadow: inset 0 -1px 0 #fff;
 }
 .content .prof_wrapper {

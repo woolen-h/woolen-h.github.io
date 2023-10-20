@@ -52,11 +52,11 @@ $(function () {
         $('header a').css({ 'color': '#212226'});
       }
 
-      if (800 < top && 2800 > top) {
+      if (800 < top && 2000 > top) {
         $('header a').css({ 'color': '#fff'});
       }
 
-      if (2800 < top) {
+      if (2000 < top) {
         $('header a').css({ 'color': '#212226'});
       }
   })
