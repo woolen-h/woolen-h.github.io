@@ -281,10 +281,6 @@ main section.top .swiper {
   padding: 1rem 1.5rem;
   line-height: 2.5rem;
   border-radius: 4rem;
-  -webkit-border-radius: 4rem;
-  -moz-border-radius: 4rem;
-  -ms-border-radius: 4rem;
-  -o-border-radius: 4rem;
   cursor: pointer;
 }
 .content .prof_wrapper .profile span .icon_dot {
@@ -416,13 +412,13 @@ main section.top .swiper {
 .bottom .full-page {
   display: flex;
   justify-content: center;
+  margin: 4rem 0;
 }
 .bottom .full-page .case_studies {
   display: flex;
   justify-content: space-between;
   width: 40rem;
   padding: 1rem 2rem;
-  margin: 100px 0;
   background-color: #212226;
   color: #fff;
   font-size: 2rem;
@@ -438,33 +434,4 @@ main section.top .swiper {
 .bottom .full-page .case_studies:hover {
   background-color: #000;
   transition: all 0.5s ease;
-}
-
-main.sub {
-  position: absolute;
-  top: 10rem;
-  width: 100%;
-  height: auto;
-  font-size: 1.25rem;
-}
-main.sub .wrapper {
-  width: 100%;
-  display: flex;
-  margin: 0 6rem;
-}
-main.sub .wrapper .profile {
-  width: 30rem;
-  height: 30rem;
-  background-color: #F27405;
-  border-radius: 2.5rem;
-  margin-right: 2rem;
-}
-main.sub .wrapper .stack_skill span {
-  padding: 0.5rem 1rem;
-  border: 1px solid #F25C05;
-  border-radius: 1.25rem;
-  line-height: 2.25rem;
-}
-main.sub .wrapper .stack_skill span + span {
-  margin-left: 5px;
 }/*# sourceMappingURL=home.css.map */

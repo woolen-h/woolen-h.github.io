@@ -1,0 +1,36 @@
+
+
+/////
+main.sub {
+  position: absolute;
+  top: 10rem;
+  width: 100%;
+  height: auto;
+  font-size: 1.25rem;
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    margin: 0 6rem;
+
+    .profile {
+      width: 30rem;
+      height: 30rem;
+      background-color: $hex-2-color;
+      border-radius: 2.5rem;
+      margin-right: 2rem;
+    }
+    .stack_skill {
+      span {
+        padding: .5rem 1rem;
+        border: 1px solid $hex-1-color;
+        border-radius: 1.25rem;
+        line-height: 2.25rem;
+
+        + span {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
