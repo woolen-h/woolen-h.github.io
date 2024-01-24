@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.Plot Raffle</title>
+    <link rel="stylesheet" href="../common/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="raffle_container">
+        <section class="main_visual">
+            <div class="background">
+                <img src="./assets/images/main_visual.png" alt="">
+            </div>
+        </section>
+        <section class="event_01">
+            <div class="raffle_apply">
+                <img src="./assets/images/event_01_01.png" alt="">
+            </div>
+            <div class="raffle_event_week raffle_event_week_01">
+                <img class="week_title" src="./assets/images/week01.png" alt="">
+                <img class="week_text" src="./assets/images/week01_text.png" alt="">
+            </div>
+            <div class="raffle_event_week raffle_event_week_02" style="display: none;">
+                <img class="week_title" src="./assets/images/week02.png" alt="">
+                <img class="week_text" src="./assets/images/week02_text.png" alt="">
+            </div>
+            <div class="raffle_event_week raffle_event_week_03" style="display: none;">
+                <img class="week_title" src="./assets/images/week03.png" alt="">
+                <img class="week_text" src="./assets/images/week03_text.png" alt="">
+            </div>
+            <div class="event_timer">
+                <div class="number_container">
+                    <div class="day js-number">
+                        <div class="plate_back">
+                            <div class="number_item top js-next-count">
+                                <span>1</span>
+                            </div>
+                            <div class="number_item bottom js-current-count">
+                                <span>0</span>
+                            </div>
+                        </div>
+                        <div class="plate">
+                            <div class="number_item top js-current-count">
+                                <span>0</span>
+                            </div>
+                            <div class="number_item bottom js-next-count">
+                                <span>1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day js-number">
+                        <div class="plate_back">
+                            <div class="number_item top js-next-count">
+                                <span>1</span>
+                            </div>
+                            <div class="number_item bottom js-current-count">
+                                <span>0</span>
+                            </div>
+                        </div>
+                        <div class="plate">
+                            <div class="number_item top js-current-count">
+                                <span>0</span>
+                            </div>
+                            <div class="number_item bottom js-next-count">
+                                <span>1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <img src="./assets/images/days.png" alt="">
+                    </div>
+                </div>
+                <div class="colon">
+                    <img src="./assets/images/colon.png" alt="">
+                </div>
+                <div class="number_container">
+                    <div class="hour js-number">
+                        <div class="plate_back">
+                            <div class="number_item top js-next-count">
+                                <span>1</span>
+                            </div>
+                            <div class="number_item bottom js-current-count">
+                                <span>0</span>
+                            </div>
+                        </div>
+                        <div class="plate">
+                            <div class="number_item top js-current-count">
+                                <span>0</span>
+                            </div>
+                            <div class="number_item bottom js-next-count">
+                                <span>1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hour js-number">
+                        <div class="plate_back">
+                            <div class="number_item top js-next-count">
+                                <span>1</span>
+                            </div>
+                            <div class="number_item bottom js-current-count">
+                                <span>0</span>
+                            </div>
+                        </div>
+                        <div class="plate">
+                            <div class="number_item top js-current-count">
+                                <span>0</span>
+                            </div>
+                            <div class="number_item bottom js-next-count">
+                                <span>1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <img src="./assets/images/hours.png" alt="">
+                    </div>
+                </div>
+                <div class="colon">
+                    <img src="./assets/images/colon.png" alt="">
+                </div>
+                <div class="number_container">
+                    <div class="min js-number">
+                        <div class="plate_back">
+                            <div class="number_item top js-next-count">
+                                <span>1</span>
+                            </div>
+                            <div class="number_item bottom js-current-count">
+                                <span>0</span>
+                            </div>
+                        </div>
+                        <div class="plate">
+                            <div class="number_item top js-current-count">
+                                <span>0</span>
+                            </div>
+                            <div class="number_item bottom js-next-count">
+                                <span>1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="min js-number">
+                        <div class="plate_back">
+                            <div class="number_item top js-next-count">
+                                <span>1</span>
+                            </div>
+                            <div class="number_item bottom js-current-count">
+                                <span>0</span>
+                            </div>
+                        </div>
+                        <div class="plate">
+                            <div class="number_item top js-current-count">
+                                <span>0</span>
+                            </div>
+                            <div class="number_item bottom js-next-count">
+                                <span>1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <img src="./assets/images/minutes.png" alt="">
+                    </div>
+                </div>
+                <div class="colon">
+                    <img src="./assets/images/colon.png" alt="">
+                </div>
+                <div class="number_container">
+                    <div class="sec js-number">
+                        <div class="plate_back">
+                            <div class="number_item top js-next-count">
+                                <span>1</span>
+                            </div>
+                            <div class="number_item bottom js-current-count">
+                                <span>0</span>
+                            </div>
+                        </div>
+                        <div class="plate">
+                            <div class="number_item top js-current-count">
+                                <span>0</span>
+                            </div>
+                            <div class="number_item bottom js-next-count">
+                                <span>1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec js-number">
+                        <div class="plate_back">
+                            <div class="number_item top js-next-count">
+                                <span>1</span>
+                            </div>
+                            <div class="number_item bottom js-current-count">
+                                <span>0</span>
+                            </div>
+                        </div>
+                        <div class="plate">
+                            <div class="number_item top js-current-count">
+                                <span>0</span>
+                            </div>
+                            <div class="number_item bottom js-next-count">
+                                <span>1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <img src="./assets/images/seconds.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <ul class="raffle_item_list">
+                <li>
+                    <div class="swiper_area">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="./assets/images/raffle_items/raffle_items_01.png" alt="">
+                                    <div class="overlay" style="display: none">
+
+                                        <!-- comming soon 일때 노출 -->
+                                        <img src="./assets/images/comingsoon_text.png" alt="">
+
+                                        <!-- finish 일때 노출 -->
+                                        <img src="./assets/images/finish_text.png" alt="">
+                                        <a href="" target="_blank">
+                                            <button type="button" class="winning_button">
+                                                <img src="./assets/images/winning_button.png" alt="">
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="items_text">
+                                    <img src="./assets/images/setago_text.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="./assets/images/raffle_items/raffle_items_02.png" alt="">
+                                    <div class="overlay">
+
+                                        <!-- comming soon 일때 노출 -->
+                                        <img src="./assets/images/comingsoon_text.png" alt="">
+
+                                        <!-- finish 일때 노출 -->
+                                        <!-- <img src="./assets/images/finish_text.png" alt="">
+                                        <a href="" target="_blank">
+                                            <button type="button" class="winning_button">
+                                                <img src="./assets/images/winning_button.png" alt="">
+                                            </button>
+                                        </a> -->
+                                    </div>
+                                </div>
+                                <div class="items_text">
+                                    <img src="./assets/images/valmuda_text.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="./assets/images/raffle_items/raffle_items_03.png" alt="">
+                                    <div class="overlay">
+
+                                        <!-- comming soon 일때 노출 -->
+                                        <!-- <img src="./assets/images/comingsoon_text.png" alt=""> -->
+
+                                        <!-- finish 일때 노출 -->
+                                        <img src="./assets/images/finish_text.png" alt="">
+                                        <a href="" target="_blank">
+                                            <button type="button" class="winning_button">
+                                                <img src="./assets/images/winning_button.png" alt="">
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="items_text">
+                                    <img src="./assets/images/turntable_text.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="apply_button_box">
+                <a href="" target="_blank">
+                    <button class="apply_button" type="button">
+                        <img src="./assets/images/raffle_button.png" alt="">
+                    </button>
+                </a>
+            </div>
+            <div class="notice_read show">
+                <button class="notice_title" type="button">
+                    <img src="./assets/images/event_01_03.png" alt="">
+                </button>
+                <div class="notice_content">
+                    <img src="./assets/images/week01_readmore.png" alt="">
+                    <img src="./assets/images/week02_readmore.png" alt="" style="display: none;">
+                    <img src="./assets/images/week03_readmore.png" alt="" style="display: none;">
+                </div>
+            </div>
+        </section>
+        <section class="event_02">
+            <div class="title">
+                <img src="./assets/images/raffle_title_01.png" alt="">
+                <img class="title_flicker" src="./assets/images/raffle_title_flicker.png" alt="">
+            </div>
+            <div class="banner-box">
+                <div class="banner">
+                    <img src="./assets/images/raffle_event_banner_01.png" alt="">
+                    <div class="cta">
+                        <a href="" target="_blank">
+                            <button class="cta_button" type="button">
+                                <img src="./assets/images/raffle_cta_button.png" alt="">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="banner">
+                    <img src="./assets/images/raffle_event_banner_02.png" alt="">
+                    <div class="cta">
+                        <a href="" target="_blank">
+                            <button class="cta_button" type="button">
+                                <img src="./assets/images/raffle_cta_button.png" alt="">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="banner">
+                    <img src="./assets/images/raffle_event_banner_03.png" alt="">
+                    <div class="cta">
+                        <a href="" target="_blank">
+                            <button class="cta_button" type="button">
+                                <img src="./assets/images/raffle_cta_button.png" alt="">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="event_03">
+            <div class="title">
+                <img src="./assets/images/raffle_title_02.png" alt="">
+            </div>
+            <div class="banner_box">
+                <div class="banner">
+                    <img src="./assets/images/raffle_event_banner_04.png" alt="">
+                    <div class="brand">
+                        <a href="" target="_blank">
+                            <button class="brand_button" type="button">
+                                <img src="./assets/images/raffle_brand_shop_button.png" alt="">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="banner">
+                    <img src="./assets/images/raffle_event_banner_05.png" alt="">
+                    <div class="brand">
+                        <a href="" target="_blank">
+                            <button class="brand_button" type="button">
+                                <img src="./assets/images/raffle_brand_shop_button.png" alt="">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="banner">
+                    <img src="./assets/images/raffle_event_banner_06.png" alt="">
+                    <div class="brand">
+                        <a href="" target="_blank">
+                            <button class="brand_button" type="button">
+                                <img src="./assets/images/raffle_brand_shop_button.png" alt="">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="../common/js/main.js"></script>
+    <script>
+        // swiper
+        const raffleSwiper = new Swiper('.swiper_area', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        })
+
+        // toggle
+        document.addEventListener("DOMContentLoaded", function () {
+            var button = document.querySelector('.notice_title');
+            var toggle = document.querySelector('.notice_content');
+            button.addEventListener('click', function () {
+                toggle.closest('.notice_read ').classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+
+</html>

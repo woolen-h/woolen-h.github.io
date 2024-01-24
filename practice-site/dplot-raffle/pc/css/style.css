@@ -1,0 +1,463 @@
+.raffle_container {
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    max-width: 1280px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.raffle_container a {
+    display: inline-block;
+}
+
+.main_visual {
+    position: relative;
+    height: 760px;
+    z-index: -1;
+}
+
+.event_01 {
+    width: 100%;
+    background-color: #000;
+    padding-top: 134px;
+    padding-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.raffle_event_week {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+}
+
+.week_title {margin-bottom: 23px;}
+.week_text {margin-bottom: 62px;}
+
+.event_timer {
+    display: flex;
+    margin-bottom: 52px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+}
+.event_timer .colon {
+    position: relative;
+    top: -23px;
+}
+.event_timer .day .upper .left_upper {margin-right: 15px;}
+.event_timer .day .lower .left_lower {margin-right: 15px;}
+
+.event_timer .hour .upper .left_upper {margin-right: 15px;}
+.event_timer .hour .lower .left_lower {margin-right: 15px;}
+.event_timer .day {position: relative;}
+.event_timer .hour {position: relative;}
+.event_timer .min {position: relative;}
+.event_timer .sec {position: relative;}
+.event_timer .num_left {
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    font-size: 100px;
+    color: #fff;
+    font-family: 'Supermercado One', sans-serif;
+}
+.event_timer .num_right {
+    position: absolute;
+    top: 3px;
+    right: 7px;
+    font-size: 100px;
+    color: #fff;
+    font-family: 'Supermercado One', sans-serif;
+}
+
+.event_timer .min .upper .left_upper {margin-right: 15px;}
+.event_timer .min .lower .left_lower {margin-right: 15px;}
+
+.event_timer .sec .upper .left_upper {margin-right: 15px;}
+.event_timer .sec .lower .left_lower {margin-right: 15px;}
+
+.raffle_item_list {
+    width: 100%;
+    max-width: 751px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.raffle_item_list .swiper_area {
+    overflow: hidden;
+    position: relative;
+}
+.swiper-slide {
+    width: 751px;
+}
+
+.swiper-slide .img_box {
+    position: relative;
+}
+
+.swiper_area .swiper-button-prev,
+.swiper_area .swiper-button-next {
+    top: 35%;
+}
+.swiper_area .swiper-button-prev:after {
+    content: '';
+    position: absolute;
+    left: 16px;
+    background-image: url('../assets/images/arrow_left.png');
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 71px;
+}
+.swiper_area .swiper-button-next:after {
+    content: '';
+    position: absolute;
+    right: 16px;
+    background-image: url('../assets/images/arrow_right.png');
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 71px;
+}
+
+.apply_button_box {
+    margin-top: 26px;
+    margin-bottom: 38px;
+}
+
+.event_01 .apply_button {
+    cursor: pointer;
+    filter: brightness(0) invert(1) grayscale(100%);
+}
+
+.event_01 .apply_button:active {
+    filter: none;
+}
+
+.event_01 .notice_title {
+    cursor: pointer;
+}
+
+.event_01  .notice_read .notice_content {
+    margin-top: 14px;
+    display: none;
+}
+
+.event_01 .notice_read.show .notice_content{
+    display: block;
+}
+
+.event_01 .items_text {
+    padding-top: 61px;
+}
+
+.event_02 {
+    width: 100%;
+    background-color: #191919;
+    padding-top: 122px;
+    padding-bottom: 139px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.event_02 .inner {
+    max-width: 960px;
+}
+
+.event_02 .title {
+    margin-bottom: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.event_02 .title .title_flicker {
+    filter: grayscale(1);
+    animation-name: flicker;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-end
+}
+
+@keyframes flicker {
+    50% { filter: grayscale(0); }
+}
+
+.event_02 .banner-box {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+
+.event_02 .banner {
+    margin: 0 auto;
+    position: relative;
+    max-width: 960px;
+}
+
+.event_02 .banner .cta {
+    position: absolute;
+    bottom: 26px;
+    right: 34px;
+}
+
+.event_02 .banner .cta_button {
+    cursor: pointer;
+    filter: brightness(0) invert(1) grayscale(100%);
+}
+
+.event_02 .banner .cta_button:active {
+    filter: none;
+}
+
+.event_03 {
+    background-color: #fff;
+    padding-top: 134px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.event_03 .inner {
+    max-width: 960px;
+}
+
+.event_03 .title {
+    margin-bottom: 77px;
+}
+
+.event_03 .banner_box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 96px
+}
+
+.event_03 .banner {
+    position: relative;
+}
+
+.event_03 .banner .brand {
+    width: 100%;
+    position: absolute;
+    bottom: 53px;
+    display: flex;
+    justify-content: center;
+}
+
+.event_03 .banner .brand_button {
+    filter: brightness(0) invert(1) grayscale(100%);
+    cursor: pointer;
+}
+
+.event_03 .banner .brand_button:active {
+    filter: none;
+}
+.winning_button {
+    cursor: pointer;
+}
+
+.dim_finish::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0, .5)
+}
+
+.dim_finish::after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 33%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    background-image: url('../assets/images/finish_text.png');
+    background-size: 34%;
+    background-repeat: no-repeat;
+}
+
+.dim_coming_soon::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0, .5)
+}
+
+.dim_coming_soon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dim_coming_soon::after {
+    content: '';
+    position: absolute;
+    top: 34%;
+    left: 33%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    background-image: url('../assets/images/comingsoon_text.png');
+    background-size: 34%;
+    background-repeat: no-repeat;
+}
+
+
+.day,
+.hour,
+.min,
+.sec {
+    width: 65px;
+    height: 112px;
+}
+
+.number_container {
+    width: 145px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 26px 15px;
+}
+
+.number_container .text {
+    width: 100%;
+    padding-top: 0;
+}
+
+.plate,
+.plate_back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.number_item {
+    position: relative;
+    width: 100%;
+    height: 56px;
+    overflow: hidden;
+
+    transition-timing-function: linear;
+    backface-visibility: hidden;
+}
+
+.number_item.top {
+    background: url(../assets/images/upper.png) no-repeat;
+}
+.number_item.top::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150%;
+    height: 100%;
+    z-index: 2;
+    box-shadow: inset 0 -15px 8px 0px rgb(34 34 34 / 30%);
+}
+
+.number_item.bottom {
+    background: url(../assets/images/lower.png) no-repeat;
+}
+.number_item.bottom::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150%;
+    height: 100%;
+    z-index: 2;
+    box-shadow: inset 0 15px 8px 0px rgb(34 34 34 / 60%);
+}
+
+.number_item span {
+    width: 100%;
+    height: 112px;
+    font-size: 100px;
+    color: #fff;
+    font-family: 'Supermercado One', sans-serif;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+
+.number_item.top span {
+    top: 0;
+}
+
+.number_item.bottom span {
+    bottom: 0;
+}
+
+.number_item.top {
+    transform-origin: 50% 100%;
+    transform: rotateX(0deg) perspective(900px);
+}
+
+.plate .number_item.bottom {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.plate .number_item.bottom {
+    transform-origin: 50% 0;
+    transform: rotateX(-180deg) perspective(900px);
+}
+
+.plate_back .number_item.bottom {
+    transform-origin: 50% 0;
+    transform: rotateX(0deg) perspective(900px);
+}
+
+.active .number_item {
+    transition: transform 0.5s;
+}
+
+.active .plate .number_item.top {
+    transform: rotateX(-180deg) perspective(900px);
+}
+
+.active .plate .number_item.bottom {
+    transform: rotateX(0deg) perspective(900px);
+
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    top: 0;
+    left: 0;
+
+    gap: 42px;
+}

@@ -1,0 +1,86 @@
+.promotion_container {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    font-size: 0;
+    margin: 0 auto;
+}
+
+.main_visual {
+    position: relative;
+}
+
+.highlight_section {
+    padding: 158px 0;
+}
+
+.highlight_section h2 {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.highlight_item_list {
+    width: 100%;
+    max-width: 1047px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 65px 11px;
+}
+
+.highlight_item {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+
+.highlight_item .swiper_area {
+    position: relative;
+}
+
+.highlight_item .swiper_area .swiper-pagination {
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.highlight_item .swiper_area .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    margin: 0;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #000;
+}
+
+.highlight_item .swiper_area .swiper-pagination-bullet-active {
+    background: #000;
+}
+
+.highlight_item .infor_area {
+    position: relative;
+}
+
+.highlight_button_area {
+    position: absolute;
+    right: 20px;
+    bottom: 26px;
+}
+
+.highlight_button {
+    position: relative;
+    filter: grayscale(1);
+    cursor: pointer;
+}
+
+.highlight_button:active {
+    filter: none;
+    top: 1px;
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,468 @@
+.raffle_container {
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    font-size: 0;
+    margin: 0 auto;
+}
+
+.raffle_container a {
+    display: inline-block;
+}
+
+.raffle_container img {
+    max-width: 100%;
+}
+
+.main_visual {
+    position: relative;
+    z-index: -1;
+}
+
+.event_01 {
+    width: 100%;
+    background-color: #000;
+    padding-top: 61px;
+    padding-bottom: 58px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.raffle_event_week {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 23px;
+    margin-bottom: 30px;
+}
+
+.week_title {
+    width: 26.25%;
+    margin-bottom: 12px;
+}
+
+.week_text {
+    width: 61.67%;
+}
+
+.raffle_apply {
+    max-width: 43.35%;
+}
+
+.pl-40 {padding-left: 40px;}
+.mb-26 {margin-bottom: 26px;}
+.mb-38 {margin-bottom: 38px;}
+.mb-56 {margin-bottom: 56px;}
+.mt-61 {margin-top: 61px;}
+.mb-66 {margin-bottom: 66px;}
+.mr-12 {margin-right: 12px;}
+
+.event_timer {
+    width: 74.52%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 33px;
+    font-family: 'Supermercado One', sans-serif;
+    gap: 7px;
+    font-size: 0;
+}
+.event_timer .upper,
+.event_timer .lower {
+    display: flex;
+}
+.event_timer .day .upper img,
+.event_timer .day .lower img,
+.event_timer .hour .upper img,
+.event_timer .hour .lower img,
+.event_timer .min .upper img,
+.event_timer .min .lower img,
+.event_timer .sec .upper img,
+.event_timer .sec .lower img {
+    width: 50%;
+}
+
+.event_timer .colon {
+    position: relative;
+    top: 11px;
+    width: 6px;
+}
+
+.event_timer .text {
+    max-width: 100%;
+    /* transform: scale(0.5);
+    transform-origin: center center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event_timer .text img {
+    max-width: 100%;
+    height: 100%;;
+}
+
+.raffle_item_list {
+    width: 74.52%;
+    margin: 0 auto 29px;
+}
+
+.raffle_item_list .swiper_area {
+    overflow: hidden;
+    position: relative;
+}
+
+.raffle_item_list .swiper_area .setago {
+    width: 85.20%;
+}
+
+.raffle_item_list .swiper_area .valmuda {
+    width: 55.80%;
+}
+
+.swiper_area .swiper-button-prev,
+.swiper_area .swiper-button-next {
+    position: absolute;
+    top: 37%;
+}
+
+.swiper_area .swiper-button-prev:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 4%;
+    background-size: contain;
+    background-image: url('../assets/images/arrow_left.png');
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+.swiper_area .swiper-button-next:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 4%;
+    background-size: contain;
+    background-image: url('../assets/images/arrow_right.png');
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+.items_text {
+    margin-top: 16px;
+}
+.event_01 .notice_box {
+    width: 74.75%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.event_01 .apply_button {
+    cursor: pointer;
+    filter: brightness(0) invert(1) grayscale(100%);
+    font-size: 0;
+}
+
+.event_01 .apply_button:active {
+    filter: none;
+}
+
+.event_01 .read_button {
+    cursor: pointer;
+}
+
+.event_01 .toggle {
+    margin-top: 14px;
+    display: none;
+}
+.img_box {
+    position: relative;
+}
+
+.event_01 .show {
+    display: block;
+}
+
+.event_02 {
+    width: 100%;
+    background-color: #191919;
+    padding-top: 52px;
+    padding-bottom: 62px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event_02 .title {
+    margin-bottom: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.event_02 .title .title_img {
+    width: 49.3%;
+    position: relative;
+    top: 3px;
+}
+
+.event_02 .title .title_flicker {
+    width: 12.22%;
+    filter: grayscale(1);
+    animation-name: flicker;
+    animation-duration: .75s;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flicker {
+    50% { filter: grayscale(0); }
+}
+
+.event_02 .banner {
+    position: relative;
+    width: 74.72%;
+}
+
+.event_02 .banner .cta {
+    position: absolute;
+    bottom: 12.56%;
+    right: 5%;
+    width: 32%;
+}
+
+.event_02 .banner .cta_button {
+    cursor: pointer;
+    filter: brightness(0) invert(1) grayscale(100%);
+}
+
+.event_02 .banner .cta_button:active {
+    filter: none;
+}
+
+.event_text {
+    width: 51.52%;
+}
+
+.event_03 {
+    background-color: #fff;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event_03 .title {
+    width: 37.78%;
+    margin-bottom: 33px;
+}
+
+.event_03 .banner {
+    position: relative;
+    width: 74.86%;
+}
+
+.event_03 .banner .brand {
+    width: 38.96%;
+    position: absolute;
+    right: 13px;
+    bottom: 13px;
+}
+.event_03 .banner .brand_button {
+    filter: brightness(0) invert(1) grayscale(100%);
+}
+
+.event_03 .banner .brand_button:active {
+    filter: none;
+}
+
+.banner_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event_02 .banner_wrap {
+    gap: 28px;
+}
+
+.event_03 .banner_wrap {
+    gap: 36px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    top: 0;
+    left: 0;
+
+    gap: 15px;
+}
+
+.overlay.comingsoon > img {
+    width: 42%;
+}
+
+.overlay.finish > img {
+    width: 32%;
+}
+
+.overlay.finish a {
+    width: 35.20%;
+}
+
+.setago_text {
+    width: 85.20%;
+}
+
+.valmuda_text {
+    width: 55.80%;
+}
+
+
+.day,
+.hour,
+.min,
+.sec {
+    position: relative;
+    width: 23px;
+    height: 40px;
+}
+
+.number_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 9px;
+}
+
+.clock_box {
+    display: flex;
+    gap: 5px;
+}
+
+.number_container .text {
+    padding-top: 0;
+    height: 11px;
+}
+
+.plate,
+.plate_back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.number_item {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+
+    transition-timing-function: linear;
+    backface-visibility: hidden;
+}
+
+.number_item.top {
+    background: url(../assets/images/upper.png) no-repeat;
+    background-size: 100%;
+    background-color: #333;
+    border-radius: 1.5px 1.5px 0 0;
+}
+
+.number_item.bottom {
+    background: url(../assets/images/lower.png) no-repeat;
+    background-size: 100%;
+    background-color: #333;
+    border-radius: 0 0 1.5px 1.5px;
+}
+
+.number_item span {
+    width: 100%;
+    height: 40px;
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Supermercado One', sans-serif;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+
+.number_item.top span {
+    top: 0;
+}
+
+.number_item.bottom span {
+    bottom: 0;
+}
+
+.number_item.bottom::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150%;
+    height: 100%;
+    z-index: 2;
+    box-shadow: inset 0 7px 4px 0px rgb(34 34 34 / 60%);
+}
+.number_item.top {
+    transform-origin: 50% 100%;
+    transform: rotateX(0deg) perspective(900px);
+}
+
+.number_item.top::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150%;
+    height: 100%;
+    z-index: 2;
+    box-shadow: inset 0 -7px 4px 0px rgb(34 34 34 / 30%);
+}
+
+.plate .number_item.bottom {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.plate .number_item.bottom {
+    transform-origin: 50% 0;
+    transform: rotateX(-180deg) perspective(900px);
+}
+
+.plate_back .number_item.bottom {
+    transform-origin: 50% 0;
+    transform: rotateX(0deg) perspective(900px);
+}
+
+.active .number_item {
+    transition: transform 0.5s;
+}
+
+.active .plate .number_item.top {
+    transform: rotateX(-180deg) perspective(900px);
+}
+
+.active .plate .number_item.bottom {
+    transform: rotateX(0deg) perspective(900px);
+
+}

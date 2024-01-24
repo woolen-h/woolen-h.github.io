@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 DAYS OF D.PLOT</title>
+    <link rel="stylesheet" href="../common/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="../common/js/main.js"></script>
+    <script src="../common/js/ScrollSection.js"></script>
+</head>
+
+<body>
+    <div class="dplot_promotion_container">
+        <section class="main_visual">
+            <div class="animation">
+                <img class="title title_01" src="./assets/images/title_01.png" alt="">
+                <img class="title title_02" src="./assets/images/title_02.png" alt="">
+            </div>
+            <div class="main_title">
+                <img class="title_03" src="./assets/images/title_03.png" alt="">
+            </div>
+        </section>
+        <!-- [todo] 탭 구현 스크립트 재작성 -->
+        <div class="tab-wrapper">
+            <button type="button" class="tab_01 active" data-tab-id="1"></button>
+            <button type="button" class="tab_02" data-tab-id="2"></button>
+            <button type="button" class="tab_03" data-tab-id="3"></button>
+            <button type="button" class="tab_04" data-tab-id="4"></button>
+        </div>
+        <section class="coupon_part" data-section-id="1">
+            <div class="content">
+                <div class="title_box">
+                    <img src="./assets/images/coupon_title.png" alt="">
+                </div>
+                <div class="coupon_download">
+                    <div class="coupon_wrapper">
+                        <div class="coupon_box">
+                            <img src="./assets/images/coupon_img.png" alt="">
+                            <button type="button" class="download_button">
+                                <img src="./assets/images/download_button.png" alt="">
+                            </button>
+                        </div>
+                        <div class="coupon_box">
+                            <img src="./assets/images/coupon_img.png" alt="">
+                            <button type="button" class="download_button">
+                                <img src="./assets/images/download_button.png" alt="">
+                            </button>
+                        </div>
+                        <div class="coupon_box">
+                            <img src="./assets/images/coupon_img.png" alt="">
+                            <button type="button" class="download_button">
+                                <img src="./assets/images/download_button.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" class="download_all_button">
+                        <img src="./assets/images/coupon_download_all.png" alt="">
+                    </button>
+                    <div class="notice_read show">
+                        <button type="button" class="notice_title">
+                            <span class="close">
+                                <img src="./assets/images/notice_read.png" alt="">
+                            </span>
+                            <span class="open">
+                                <img src="./assets/images/notice_read_open.png" alt="">
+                            </span>
+                        </button>
+                        <div class="notice_content">
+                            <img src="./assets/images/notice_contents.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="purchase_best_part" data-section-id="2">
+            <div class="title_box">
+                <img src="./assets/images/purchase_title.png" alt="">
+            </div>
+            <div class="ranking_wrapper">
+                <div class="title_box">
+                    <img src="./assets/images/rank_top_1_5.png" alt="">
+                </div>
+                <div class="rank_button_wrapper">
+                    <a href="https://www.dplot.co.kr/magazine/brand/detail/158" target="_blank">
+                        <img src="./assets/images/balmuda.png" alt="">
+                    </a>
+                    <a href="https://www.dplot.co.kr/magazine/brand/detail/272" target="_blank">
+                        <img src="./assets/images/sony.png" alt="">
+                    </a>
+                    <a href="https://www.dplot.co.kr/magazine/brand/detail/107" target="_blank">
+                        <img src="./assets/images/mujagi.png" alt="">
+                    </a>
+                    <a href="https://www.dplot.co.kr/magazine/brand/detail/30" target="_blank">
+                        <img src="./assets/images/bline.png" alt="">
+                    </a>
+                    <a href="https://www.dplot.co.kr/magazine/brand/detail/202?q=1" target="_blank">
+                        <img src="./assets/images/ilkwang.png" alt="">
+                    </a>
+                </div>
+                <div class="title_box">
+                    <img src="./assets/images/rank_top_6_10.png" alt="">
+                </div>
+                <div class="rank_button_wrapper">
+                    <a href="https://www.dplot.co.kr/magazine/brand/detail/243" target="_blank">
+                        <img src="./assets/images/vatya.png" alt="">
+                    </a>
+                    <a href="https://www.dplot.co.kr/magazine/brand/detail/131" target="_blank">
+                        <img src="./assets/images/younus.png" alt="">
+                    </a>
+                    <a href="https://www.dplot.co.kr/magazine/brand/detail/262" target="_blank">
+                        <img src="./assets/images/ntradition.png" alt="">
+                    </a>
+                    <a href="https://www.dplot.co.kr/magazine/brand/detail/145" target="_blank">
+                        <img src="./assets/images/triangle.png" alt="">
+                    </a>
+                    <a href="https://www.dplot.co.kr/magazine/brand/detail/119" target="_blank">
+                        <img src="./assets/images/towelogist.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="brand_show_box">
+                <div class="swiperItem">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img_box">
+                                <img src="./assets/images/balmuda_slide.png" alt="">
+                            </div>
+                            <div class="text_wrap">
+                                <img src="./assets/images/swiper_deco_image.png" alt="">
+                                <h3>BALMUDA</h3>
+                                <p>미니멀 디자인 가전</p>
+                                <a href="https://www.dplot.co.kr/magazine/brand/detail/158" target="_blank"
+                                    class="brand_link">
+                                    브랜드관 바로가기
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box"><img src="./assets/images/sony_slide.png" alt=""></div>
+                            <div class="text_wrap">
+                                <img src="./assets/images/swiper_deco_image.png" alt="">
+                                <h3>SONY</h3>
+                                <p>트렌드를 이끄는 전자기기</p>
+                                <a href="https://www.dplot.co.kr/magazine/brand/detail/272" target="_blank"
+                                    class="brand_link">
+                                    브랜드관 바로가기
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box"><img src="./assets/images/mujagi_slide.png" alt=""></div>
+                            <div class="text_wrap">
+                                <img src="./assets/images/swiper_deco_image.png" alt="">
+                                <h3>MUJAGI</h3>
+                                <p>캐주얼 모던 한국 백자</p>
+                                <a href="https://www.dplot.co.kr/magazine/brand/detail/107" target="_blank"
+                                    class="brand_link">
+                                    브랜드관 바로가기
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box"><img src="./assets/images/bline_slide.png" alt=""></div>
+                            <div class="text_wrap">
+                                <img src="./assets/images/swiper_deco_image.png" alt="">
+                                <h3>B-LINE</h3>
+                                <p>지속 가능한 디자인 가구</p>
+                                <a href="https://www.dplot.co.kr/magazine/brand/detail/30" target="_blank"
+                                    class="brand_link">
+                                    브랜드관 바로가기
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box"><img src="./assets/images/ilkwang_slide.png" alt=""></div>
+                            <div class="text_wrap two_line">
+                                <img src="./assets/images/swiper_deco_image.png" alt="">
+                                <h3 class="two_line">ILKWANG<br>
+                                    LIGHTING</h3>
+                                <p>대중 전구에서 대중 조명으로</p>
+                                <a href="https://www.dplot.co.kr/magazine/brand/detail/202?q=1" target="_blank"
+                                    class="brand_link">
+                                    브랜드관 바로가기
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box"><img src="./assets/images/vatya_slide.png" alt=""></div>
+                            <div class="text_wrap">
+                                <img src="./assets/images/swiper_deco_image.png" alt="">
+                                <h3>VATYA</h3>
+                                <p>내구성 강한 주방용품</p>
+                                <a href="https://www.dplot.co.kr/magazine/brand/detail/243" target="_blank"
+                                    class="brand_link">
+                                    브랜드관 바로가기
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box"><img src="./assets/images/younus_slide.png" alt=""></div>
+                            <div class="text_wrap">
+                                <img src="./assets/images/swiper_deco_image.png" alt="">
+                                <h3>YOU&US</h3>
+                                <p>고품격 아트 러그</p>
+                                <a href="https://www.dplot.co.kr/magazine/brand/detail/131" target="_blank"
+                                    class="brand_link">
+                                    브랜드관 바로가기
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box"><img src="./assets/images/ntradition_slide.png" alt=""></div>
+                            <div class="text_wrap">
+                                <img src="./assets/images/swiper_deco_image.png" alt="">
+                                <h3>&TRADITION</h3>
+                                <p>덴마크 프리미엄 리빙브랜드</p>
+                                <a href="https://www.dplot.co.kr/magazine/brand/detail/262" target="_blank"
+                                    class="brand_link">
+                                    브랜드관 바로가기
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box"><img src="./assets/images/triangle_slide.png" alt=""></div>
+                            <div class="text_wrap">
+                                <img src="./assets/images/swiper_deco_image.png" alt="">
+                                <h3>TRIANGLE</h3>
+                                <p>전문적인 주방용품</p>
+                                <a href="https://www.dplot.co.kr/magazine/brand/detail/145" target="_blank"
+                                    class="brand_link">
+                                    브랜드관 바로가기
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_box"><img src="./assets/images/towelogist_slide.png" alt=""></div>
+                            <div class="text_wrap">
+                                <img src="./assets/images/swiper_deco_image.png" alt="">
+                                <h3>TOWELOGIST</h3>
+                                <p>컬러풀한 프리미엄 타월</p>
+                                <a href="https://www.dplot.co.kr/magazine/brand/detail/119" target="_blank"
+                                    class="brand_link">
+                                    브랜드관 바로가기
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <!-- [todo] swiperItem와 연결 -->
+                <div class="swiperItemBox">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000006100" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box bottom_position">
+                                        <img src="./assets/temp_images/01.png" alt="">
+                                    </div>
+                                    <div class="title_box">
+                                        더 토스터, 화이트
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000006118" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/temp_images/02.png" alt="">
+                                    </div>
+                                    <div class="title_box">
+                                            더 레인지, 화이트
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000006103" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/temp_images/03.png" alt="">
+                                    </div>
+                                    <div class="title_box">
+                                            더 팟 전기포트, 화이트
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000006117" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/temp_images/04.png" alt="">
+                                    </div>
+                                    <div class="title_box">
+                                            더 브루 커피메이커
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000006541" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/sony_item_01.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-13">
+                                            노이즈캔슬링 헤드폰<br>WH1000XM4, 플래티넘 실버
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000006628" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/sony_item_02.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            데일리 헤드폰 WH-CH520,<br>베이지
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000006660" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/sony_item_03.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            크리스탈 사운드스피커<br>LSPX-S3
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000006638" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/sony_item_04.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            노이즈캔슬링 무선이어폰<br>WF1000XM5, 블랙
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000004991" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/mujagi_item_01.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            무자기 꽃 면기 볼 29, 유광
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000000688" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/mujagi_item_02.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            무자기 꽃 접시 19,<br>청백 유광
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000002431" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/mujagi_item_03.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            무자기 꽃 면기 미니 볼 06,<br>6잎 유광
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000000691" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/mujagi_item_04.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            무자기 꽃 대접시 39,<br>청백 유광
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000005781" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/bline_item_01.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            비라인 보비 트롤리 22,<br>빈티지화이트
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000000276" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/bline_item_02.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            비라인 보비 트롤리 35, 허니
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000000490" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/bline_item_03.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            비라인 보비 트롤리 33, 레드
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000005783" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/bline_item_04.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            비라인 보비 트롤리 34,<br>빈티지화이트
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000003164" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/ilkwang_item_01.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            스노우맨22 테이블스탠드<br>버터
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000005950" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/ilkwang_item_02.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            스노우맨15 솔리드 포터블<br> 스탠드, 버터
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000005242" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/ilkwang_item_03.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-15">
+                                            스노우맨22 솔리드 테이블 스탠드<br>피치&딥그린
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000005949" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/ilkwang_item_04.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            스노우맨15 솔리드 포터블<br>스탠드 화이트
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000005278" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/vatya_item_01.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            풀스텐 음식물쓰레기통,<br>2L
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000005271" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/vatya_item_02.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            풀스텐 엠보형<br>식기건조대
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000005279" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/vatya_item_03.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            풀스텐 설거지통
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000005276" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/vatya_item_04.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            풀스텐 세로형 수저통
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000002761" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/younus_item_01.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            WGNB 백종환<br>You May Also Like
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000002763" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/younus_item_02.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            켈리박 스웻하트러그
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000004119" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/younus_item_03.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            갑빠오 Pacemaker
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000002748" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/younus_item_04.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            오하이오 APT
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000006089" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/ntradition_item_01.png" alt="">
+                                    </div>
+                                    <div class="title_box">
+                                            세타고 포터블 JH27,<br>러스트&썬더
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000006174" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/ntradition_item_02.png" alt="">
+                                    </div>
+                                    <div class="title_box">
+                                            라토 테이블LN8,<br>아이보리
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000006098" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/ntradition_item_03.png" alt="">
+                                    </div>
+                                    <div class="title_box">
+                                            플라워팟 포터블 VP9,<br>머스타드
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000006058" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/ntradition_item_04.png" alt="">
+                                    </div>
+                                    <div class="title_box">
+                                            플라워팟 월램프 VP8,<br>매트화이트
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000002225" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/triangle_item_01.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            스테인레스 뒤집개
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000002197" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/triangle_item_02.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            1946 시리즈 국자
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000002214" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/triangle_item_03.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            줄리앤 3종 세트
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000002226" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/triangle_item_04.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            소스 국자
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000001068" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/towelogist_item_01.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            스마일리 스템프 페이스타월<br>40×80cm, 1ea
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000001069" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/towelogist_item_02.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            스마일리 빅스마일 페이스타월<br>40×80cm, 1ea
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000001054" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/towelogist_item_03.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            솜 타월 이센셜 컬러<br>40x85cm, 1ea
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dplot.co.kr/shop/detail/0000001067" target="_blank">
+                                <div class="item_box">
+                                    <div class="img_box">
+                                        <img src="./assets/images/towelogist_item_04.png" alt="">
+                                    </div>
+                                    <div class="title_box fs-18">
+                                            스마일리 도트 페이스타월<br>40x80cm, 1ea
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="like_best_part" data-section-id="3">
+            <div class="title_box">
+                <img src="./assets/images/like_best_title.png" alt="">
+            </div>
+            <div class="snsBox">
+                <!-- [todo] banner_swiper와 연결 -->
+                <div class="swiperInsta">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/images/insta_thumb_01.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/insta_thumb_02.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/insta_thumb_03.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/insta_thumb_04.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="insta_frame">
+                    <img src="./assets/images/like_best_insta_frame.png" alt="">
+                </div>
+                <div class="heart_box">
+                    <div class="insta_heart insta_heart_01">
+                        <img src="./assets/images/insta_heart.png" alt="">
+                    </div>
+                    <div class="insta_heart insta_heart_02">
+                        <img src="./assets/images/insta_heart.png" alt="">
+                    </div>
+                    <div class="insta_heart insta_heart_03">
+                        <img src="./assets/images/insta_heart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="link_banner">
+                <!-- [todo] swiperInsta와 연결 -->
+                <div class="banner_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="banner_box">
+                                <div class="thumb_box">
+                                    <img src="./assets/images/product_thumb_01.png" alt="">
+                                </div>
+                                <div class="title_box">
+                                    <h3>윙크타코 젓가락 받침</h3>
+                                    <p>#하루만에 품절 #윙크타코 #수저받침</p>
+                                </div>
+                                <a href="https://www.dplot.co.kr/shop/detail/0000007225" target="_blank" class="link_direct">
+                                    <button type="button">
+                                        상품 보러가기
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner_box">
+                                <div class="thumb_box">
+                                    <img src="./assets/images/product_thumb_02.png" alt="">
+                                </div>
+                                <div class="title_box">
+                                    <h3>앰비언텍 힘 골드</h3>
+                                    <p>#유리로만든촛불 #촛불램프 #겨울램프</p>
+                                </div>
+                                <a href="https://www.dplot.co.kr/shop/detail/0000007386" target="_blank" class="link_direct">
+                                    <button type="button">
+                                        상품 보러가기
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner_box">
+                                <div class="thumb_box">
+                                    <img src="./assets/images/product_thumb_03.png" alt="">
+                                </div>
+                                <div class="title_box">
+                                    <h3>오디세이 옻칠 컵<br>
+                                        4컬러 세트, 200ml</h3>
+                                    <p>#옻칠커피잔 #옻칠공예 #정성스런선물</p>
+                                </div>
+                                <a href="https://www.dplot.co.kr/shop/detail/0000006692" target="_blank" class="link_direct">
+                                    <button type="button">
+                                        상품 보러가기
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner_box">
+                                <div class="thumb_box">
+                                    <img src="./assets/images/product_thumb_04.png" alt="">
+                                </div>
+                                <div class="title_box">
+                                    <h3>플라스틱 클립, 4컬러</h3>
+                                    <p>#펜코클립 #데스크테리어 #플라스틱클립</p>
+                                </div>
+                                <a href="https://www.dplot.co.kr/shop/detail/0000005665" target="_blank" class="link_direct">
+                                    <button type="button">
+                                        상품 보러가기
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <a href="https://www.dplot.co.kr/magazine/brand/detail/277" target="_blank" id="best_brand_link">
+                <button type="button" class="brand_button">
+                    <img src="./assets/images/brand_button.png" alt="">
+                </button>
+            </a>
+        </section>
+        <section class="mds_pick_part" data-section-id="4">
+            <div class="title_box">
+                <img src="./assets/images/mds_pick_title.png" alt="">
+            </div>
+            <div class="brand_box">
+                <a href="https://www.dplot.co.kr/magazine/brand/detail/295" target="_blank">
+                    <div class="kai_select"></div>
+                </a>
+                <a href="https://www.dplot.co.kr/magazine/brand/detail/285" target="_blank">
+                    <div class="metalmorphose"></div>
+                </a>
+                <a href="https://www.dplot.co.kr/magazine/brand/detail/228" target="_blank">
+                    <div class="doyoramseoul"></div>
+                </a>
+                <a href="https://www.dplot.co.kr/magazine/brand/detail/300" target="_blank">
+                    <div class="daat"></div>
+                </a>
+            </div>
+        </section>
+    </div>
+    <script>
+        // items_swiper
+        const itemSwiper = new Swiper('.swiperItem', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            on: {
+
+            }
+        });
+
+        // itembox_swiper
+        const itemboxSwiper = new Swiper('.swiperItemBox', {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+            spaceBetween: 0,
+            loop: true,
+            allowTouchMove: false,
+        });
+
+        itemSwiper.on('slideChange', e => {
+            itemboxSwiper.slideTo(e.realIndex * 4);
+        })
+
+        // insta_swiper
+        const instaSwiper = new Swiper('.swiperInsta', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        // link_banner_swiper
+        const link_banner_swiper = new Swiper('.banner_swiper', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            allowTouchMove: false,
+        });
+
+        instaSwiper.on('slideChange', e => {
+            link_banner_swiper.slideTo(e.realIndex);
+
+            const brandCode = {
+                0: '277',
+                1: '289',
+                2: '276',
+                3: '259',
+            }
+
+            const link = `https://www.dplot.co.kr/magazine/brand/detail/${brandCode[e.realIndex]}`
+
+            const bestBrandLink = document.querySelector('#best_brand_link');
+            bestBrandLink.setAttribute('href', link);
+        })
+
+        // toggle
+        document.addEventListener("DOMContentLoaded", function () {
+            var button = document.querySelector('.notice_title');
+            var toggle = document.querySelector('.notice_content');
+            button.addEventListener('click', function () {
+                toggle.closest('.notice_read ').classList.toggle('show');
+            });
+        });
+
+        // 애니메이션(heart)
+        gsap.set('.insta_heart', { y: 20, opacity: 0, scale: 0.8 })
+
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.like_best_part',
+                start: "top top",
+                end: "+=150",
+                scrub: 1,
+            }
+        })
+
+tl.to('.insta_heart_01', {
+    y: 0,
+    opacity: 1,
+    scale: 1.2,
+    duration: 0.4
+}).to('.insta_heart_01', {
+    y: 0,
+    opacity: 1,
+    scale: 0.9,
+    duration: 0.4
+}).to('.insta_heart_01', {
+    y: 0,
+    opacity: 1,
+    scale: 1.1,
+    duration: 0.4
+}).to('.insta_heart_01', {
+    y: 0,
+    opacity: 1,
+    scale: 1,
+    duration: 0.4
+}).to('.insta_heart_02', {
+    y: 0,
+    opacity: 1,
+    scale: 1.2,
+    duration: 0.4
+}).to('.insta_heart_02', {
+    y: 0,
+    opacity: 1,
+    scale: 0.9,
+    duration: 0.4
+}).to('.insta_heart_02', {
+    y: 0,
+    opacity: 1,
+    scale: 1.1,
+    duration: 0.4
+}).to('.insta_heart_02', {
+    y: 0,
+    opacity: 1,
+    scale: 1,
+    duration: 0.4
+}).to('.insta_heart_03', {
+    y: 0,
+    opacity: 1,
+    scale: 1.2,
+    duration: 0.4
+}).to('.insta_heart_03', {
+    y: 0,
+    opacity: 1,
+    scale: 0.9,
+    duration: 0.4
+}).to('.insta_heart_03', {
+    y: 0,
+    opacity: 1,
+    scale: 1.1,
+    duration: 0.4
+}).to('.insta_heart_03', {
+    y: 0,
+    opacity: 1,
+    scale: 1,
+    duration: 0.4
+})
+
+        window.onload = () => new TabSection();
+    </script>
+</body>
+
+</html>
