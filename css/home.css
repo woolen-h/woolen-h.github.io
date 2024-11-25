@@ -59,7 +59,7 @@ hr {
 body {
   width: 100%;
   overflow-y: scroll;
-  background-color: #EDEDE8;
+  background-color: #edede8;
 }
 
 body::-webkit-scrollbar {
@@ -242,23 +242,45 @@ main section.top .swiper {
   line-height: 2.75rem;
   font-size: 1.75rem;
 }
+.content .discript table th {
+  padding: 3px 10px;
+  text-align: left;
+}
+.content .discript table td .per100 {
+  position: relative;
+  display: block;
+  top: 3px;
+  width: 200px;
+  height: 20px;
+  margin-right: 6rem;
+  background-color: #fff;
+}
+.content .discript table td .per80 {
+  position: relative;
+  top: 3px;
+  display: block;
+  width: 160px;
+  height: 20px;
+  margin-right: 50px;
+  background-color: #fff;
+}
 .content .discript .line_01 {
   flex: 2;
+  display: flex;
+}
+.content .discript .line_01 h1 {
+  margin-right: 5rem;
 }
 .content .discript .line_02 {
-  flex: 1;
+  flex: 2;
+  display: flex;
+}
+.content .discript .line_02 h1 {
+  margin-right: 5rem;
 }
 .content .discript .line_02 span {
   display: inline-block;
   width: 30rem;
-}
-.content .discript .line_03 {
-  display: flex;
-  align-items: flex-end;
-  flex: 1;
-}
-.content .discript .line_03 li a {
-  box-shadow: inset 0 -1px 0 #fff;
 }
 .content .prof_wrapper {
   display: flex;
@@ -384,7 +406,13 @@ main section.top .swiper {
   background-image: url("/images/proj_img_05.png");
 }
 .bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img.img06 {
-  background-image: url("/images/proj_img_06.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+.bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img.img06 img {
+  width: 100px;
 }
 .bottom .project_wrapper .project_01 .proj_img_wrapper .proj_img:hover {
   margin: 2rem;
@@ -436,4 +464,4 @@ main section.top .swiper {
 .bottom .full-page .case_studies:hover {
   background-color: #000;
   transition: all 0.5s ease;
-}/*# sourceMappingURL=home.css.map */
+}
